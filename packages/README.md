@@ -117,15 +117,10 @@ Replace `<NAME>` with the package name.
 
 5. Add an export statement for the package in [`packages.ts`](./packages.ts). This ensures [tests](./test.ts) are run for the package.
 
-6. Re-link the packages workspace:
+6. Rebuild and re-link the packages (from the repository root):
 
 ```sh
-npm run build
-npm link --workspaces
-cd ../data-experience
-npm i
-cd ../experiences
-npm i
+npm run setup -- --site
 ```
 
 ### Login to npm

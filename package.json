@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "setup": "bash ./scripts/setup.sh",
+    "test": "bash ./scripts/test.sh",
     "check:viewer-sync": "bash ./scripts/check-viewer-sync.sh"
   },
   "dependencies": {

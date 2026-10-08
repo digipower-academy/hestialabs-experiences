@@ -37,16 +37,9 @@ if (experiences) {
     )
     handleSpawnOutput(spawnSync('npm', ['install', ...packages]))
   } else {
-    // cross-platform spawn
-    const spawn = require('cross-spawn')
-    const experiencePackages = experiences.map((packageNameAndTag) => {
-      const [name] = packageNameAndTag.split('@')
-      return `@hestia.ai/${name}`
-    })
-    console.info(
-      'Linking packages...\n' +
-      experiencePackages.join('\n')
-    )
-    handleSpawnOutput(spawn.sync('npm', ['link', ...experiencePackages]))
+    // symlink the configured experiences from the monorepo
+    const { linkLocalExperiences } = require('../scripts/link-local-experiences.cjs')
+    const names = experiences.map(packageNameAndTag => packageNameAndTag.split('@')[0])
+    linkLocalExperiences(__dirname, names)
   }
 }
