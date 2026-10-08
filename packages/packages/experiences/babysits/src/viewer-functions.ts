@@ -1,9 +1,13 @@
 import type { FileManager } from '@/types/utils'
 
-async function csv_babysitter_jobs({ fileManager }: { fileManager: FileManager }) {
-  const csv = (await fileManager.getCsvItemsFromId("BabysitterJobs"))[0] ?? {
+async function csv_babysitter_jobs({
+  fileManager
+}: {
+  fileManager: FileManager
+}) {
+  const csv = (await fileManager.getCsvItemsFromId('BabysitterJobs'))[0] ?? {
     headers: [],
-    items: [],
+    items: []
   }
 
   const rows = csv.items
@@ -71,16 +75,16 @@ async function csv_babysitter_jobs({ fileManager }: { fileManager: FileManager }
 
   return {
     headers: [
-      "job_id",
-      "date",
-      "start_time",
-      "end_time",
-      "duration_hours",
-      "earnings",
-      "location",
-      "job_type",
-      "status",
-      "category",
+      'job_id',
+      'date',
+      'start_time',
+      'end_time',
+      'duration_hours',
+      'earnings',
+      'location',
+      'job_type',
+      'status',
+      'category'
     ],
     items
   }

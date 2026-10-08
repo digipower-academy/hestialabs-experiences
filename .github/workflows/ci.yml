@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  packages:
+    name: packages (lint, build, validate)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: packages/package-lock.json
+      - run: npm ci
+      # builds every experience package, then validates its configuration
+      - run: npm test
+      # after the build: packages.ts imports the built dist files
+      - run: npm run lint:all
+
+  data-experience:
+    name: data-experience (lint, unit tests)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: |
+            packages/package-lock.json
+            data-experience/package-lock.json
+      # Jest resolves @hestia.ai/* to the locally built packages
+      - name: Build packages
+        working-directory: packages
+        run: |
+          npm ci
+          npm run build
+      - working-directory: data-experience
+        run: npm ci
+      - working-directory: data-experience
+        run: npx vue-cli-service lint --no-fix
+      - working-directory: data-experience
+        run: npm test
+
+  experiences:
+    name: experiences (lint)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: experiences
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: experiences/package-lock.json
+      # skip postinstall, which links or installs every experience package
+      - run: npm ci --ignore-scripts
+      - run: npm run lint
+
+  viewer-sync:
+    name: viewer JSON sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash ./scripts/check-viewer-sync.sh
