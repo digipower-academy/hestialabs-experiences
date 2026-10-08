@@ -26,7 +26,8 @@
     "prepare": "cd ../ && husky install ./.husky",
     "prettier": "prettier",
     "sql-formatter": "find ./packages -name *.sql | parallel \"sql-formatter {} --output {} --config ./sql-formatter.config.json\"",
-    "lint": "eslint --ext .ts,.mts,.js,.mjs"
+    "lint": "eslint --ext .ts,.mts,.js,.mjs",
+    "lint:all": "npm run lint -- lib packages/experiences packages.ts test.ts --ignore-pattern dist"
   },
   "repository": {
     "type": "git",

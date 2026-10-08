@@ -6,7 +6,23 @@ module.exports = {
     jest: true
   },
   extends: ['plugin:vue/essential', 'standard'],
-  overrides: [],
+  overrides: [
+    {
+      // Performance tests read values only to force their computation for timing
+      files: ['src/__tests__/**/performance/*.test.js'],
+      rules: {
+        'no-void': 'off',
+        'no-unused-vars': 'off'
+      }
+    },
+    {
+      // Embedding examples mount the app with `new Vue(...)`
+      files: ['deployment-examples/**/*.js'],
+      rules: {
+        'no-new': 'off'
+      }
+    }
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'

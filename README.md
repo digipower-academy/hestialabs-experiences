@@ -83,6 +83,19 @@ You can run the Nuxt app in development mode with
 npm run dev
 ```
 
+## Checks (CI)
+
+Every pull request runs [`.github/workflows/ci.yml`](.github/workflows/ci.yml). To run the same checks locally:
+
+```sh
+cd packages && npm ci && npm test && npm run lint:all   # build, validate experience configs, lint
+cd ../data-experience && npm ci && npx vue-cli-service lint --no-fix && npm test
+cd ../experiences && npm ci --ignore-scripts && npm run lint
+cd .. && npm run check:viewer-sync
+```
+
+The Playwright browser tests (`data-experience/e2e`) are not part of CI yet. They need the dev server and the bubble server running (`npm run dev` in `data-experience`).
+
 ## Viewer JSON Sync Check
 
 Run this from the repository root to verify that files in `data-experience/public/*-viewer.json`
