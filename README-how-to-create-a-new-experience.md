@@ -17,7 +17,7 @@ root/
 └── package.json                     <-- Root workspace
 ```
 
-**Note**: Both `packages/experiences` and `data-experience` are in the same monorepo root and linked via `npm link --workspaces`.
+**Note**: Both `packages/experiences` and `data-experience` are in the same repository. `npm run setup` from the root installs and builds them; `data-experience` resolves `@hestia.ai/*` imports to the local packages (webpack aliases in `vue.config.js`, `moduleNameMapper` in Jest).
 
 ---
 
@@ -63,10 +63,9 @@ External Data (CSV files)
 
 Before starting development, ensure the following prerequisites are met:
 
-- **Node.js 18+** installed on system
+- **Node.js 22** installed (see `.nvmrc`)
 - **Git** configured for repository access
-- Root project initialized: Run `npm install` from repository root
-- Monorepo workspace linked: Run `npm link --workspaces` from root
+- Dependencies installed and packages built: run `npm run setup` from the repository root
 
 If you encounter build errors, verify all prerequisites are satisfied before proceeding.
 
@@ -98,11 +97,6 @@ Generate the package metadata file at `packages/packages/experiences/my-experien
   "main": "dist/index.mjs",
   "type": "module",
   "files": ["dist", "src/my-experience-viewer.json"],
-  "dependencies": {},
-  "peerDependencies": {
-    "vue": "^3.0.0",
-    "dayjs": "*"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hestiaai/hestialabs-experiences",
@@ -116,7 +110,7 @@ Generate the package metadata file at `packages/packages/experiences/my-experien
 }
 ```
 
-**Dependencies Note**: Libraries like `dayjs`, `apexcharts`, and `shepherd.js` are provided by the monorepo root. Include them in `peerDependencies` but do NOT install locally in this package. They are linked via `npm link --workspaces` during build.
+**Dependencies Note**: An experience package contains no Vue code and needs no dependencies. Libraries used by the visualizations (`dayjs`, `vue-apexcharts`, `shepherd.js`, …) are dependencies of `data-experience`, where the Vue 2 components live.
 
 ---
 
@@ -184,7 +178,7 @@ Create the viewer configuration file at `packages/packages/experiences/my-experi
       "id": "overview",
       "customPipeline": "overviewPipeline",
       "files": ["PaymentsFile", "TransactionsFile"],
-      "visualization": "view/myExperience/Overview.vue",
+      "visualization": "myExperience/Overview.vue",
       "title": "Overview",
       "showTable": false
     },
@@ -192,7 +186,7 @@ Create the viewer configuration file at `packages/packages/experiences/my-experi
       "id": "details",
       "customPipeline": "detailsPipeline",
       "files": ["DetailsFile"],
-      "visualization": "view/myExperience/Details.vue",
+      "visualization": "myExperience/Details.vue",
       "title": "Details",
       "showTable": false
     }
@@ -858,14 +852,9 @@ Execute the complete build process:
 
 ```bash
 # From project root
-cd packages
-npm install
-npm run build
-npm link --workspaces
+npm run setup
 
-cd ../data-experience
-npm install
-npm run build
+cd data-experience
 npm run dev:app
 ```
 
@@ -931,10 +920,10 @@ gap: 20px;
 | Component not rendering | Check visualization path in viewer.json is correct |
 | Files not loading | Check file patterns match actual data export structure |
 | Pipeline returns null | Use `?? { headers: [], items: [] }` fallback |
-| Build fails | Run `npm link --workspaces` |
+| Build fails | Run `npm run setup` from the repository root |
 | Tests timeout | Optimize computed properties, profile with DevTools |
 | Tour doesn't show | Call `tour.start()` in mounted hook, check selectors |
-| Import errors in tests (e.g., `@hestia.ai/my-experience` not found) | Ensure `npm link --workspaces` was executed AND Jest `moduleNameMapper` is configured in `data-experience/jest.setup.js` to resolve package aliases |
+| Import errors in tests (e.g., `@hestia.ai/my-experience` not found) | Run `npm run setup` (Jest maps `@hestia.ai/<name>` to `packages/packages/experiences/<name>/dist/index.mjs`, so the package must be built), and add the package to `packages/packages.ts` |
 
 ---
 
@@ -998,7 +987,7 @@ To extend an experience with new metrics or charts (e.g., "Tips over Time" for U
    {
      "id": "tips-analytics",
      "customPipeline": "tipsPipeline",
-     "visualization": "view/myExperience/charts/TipsChart.vue"
+     "visualization": "myExperience/charts/TipsChart.vue"
    }
    ```
 

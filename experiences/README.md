@@ -15,17 +15,15 @@ $ cd ../packages
 $ npm install
 ```
 
-2. Then, still in the folder `packages`, build the packages in the monorepo and create symlinks to them. This saves the packages in the global `node_modules/` folder (see [npm-link documentation](https://docs.npmjs.com/cli/v8/commands/npm-link)).
+2. Then, still in the folder `packages`, build the packages in the monorepo:
 
 ```sh
 $ npm run build
 ```
 
-```sh
-$ npm link --workspaces
-```
+3. Navigate back to folder `experiences` and install the root package. This triggers the [`postinstall`](./postinstall.cjs) [post script](https://docs.npmjs.com/cli/v8/using-npm/scripts#pre--post-scripts) that symlinks the experiences listed in `config/${CONFIG_NAME}.json` (default `dev`) from `../packages` into `node_modules/@hestia.ai/`.
 
-3. Navigate back to folder `experiences` and install the root package. This triggers the [`postinstall`](./postinstall.js) [post script](https://docs.npmjs.com/cli/v8/using-npm/scripts#pre--post-scripts) that creates symlinks from the previously globally-linked packages to the `node_modules/` of the current folder.
+(`npm run setup -- --site` from the repository root does steps 1–3 and builds `dc-dashboard` and `data-experience` too.)
 
 ```sh
 $ cd ../experiences
@@ -80,7 +78,6 @@ Make sure you have the latest version of all packages
 cd ../packages
 npm install
 npm run build
-npm link --workspaces
 cd ../data-experience
 npm install
 npm run build

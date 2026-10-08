@@ -7,3 +7,7 @@
 /data-experience/.log/
 /data-experience/demo/
 .env
+
+# Real data exports for local development (see AGENTS.md)
+experience-intake/inbox/*
+!experience-intake/inbox/README.md

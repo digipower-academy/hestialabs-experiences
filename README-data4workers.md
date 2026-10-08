@@ -140,7 +140,6 @@ cd packages
 npm i
 npm run build
 npm run prepare
-npm link --workspaces
 ```
 
 Then install and build `dc-dashboard` package:

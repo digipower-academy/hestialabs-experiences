@@ -12,6 +12,8 @@ This repo is also dependent on the [bubble-server](https://github.com/hestiaAI/h
 ## Setup
 **This project needs Node 22 (LTS) and npm 10 or later. The version is pinned in [`.nvmrc`](.nvmrc); we recommend using `nvm` ([installation](https://heynode.com/tutorial/install-nodejs-locally-nvm/)).**
 
+**Quick start:** clone this repo and the bubble-server side by side (below), then from this repo's root run `npm run setup -- --all` (or plain `npm run setup` for just what the tests need) and `npm test`. The steps below are what `scripts/setup.sh` does. Agents and new contributors: read [`AGENTS.md`](AGENTS.md).
+
 First create a new directory, and clone this repo and the bubble-server:
 ```sh
 git clone https://github.com/hestiaAI/hestialabs-experiences.git
@@ -40,7 +42,6 @@ cd ../hestialabs-experiences/packages
 npm i
 npm run build
 npm run prepare
-npm link --workspaces
 ```
 
 Then install and build `dc-dashboard` package:

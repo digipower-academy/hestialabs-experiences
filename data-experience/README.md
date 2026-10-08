@@ -14,7 +14,6 @@ Make sure you have the latest version of all packages
 cd ../packages
 npm install
 npm run build
-npm link --workspaces
 cd ../data-experience
 npm install
 ```

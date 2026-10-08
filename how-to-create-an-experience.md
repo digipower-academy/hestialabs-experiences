@@ -710,8 +710,6 @@ This will validate the database config and run some checks on the experiences
 ``` typescript
 cd ../packages
 npm run test
-# and just to be sure, for the next step
-npm link --workspaces
 ```
 
 ### Creating a database test 
