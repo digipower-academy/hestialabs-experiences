@@ -29,6 +29,7 @@
   },
   "exclude": [
     "test.ts",
+    "validate-viewer.ts",
     "migrate-viewer.ts",
     "packages.ts",
     "packages/hestias-hearth",

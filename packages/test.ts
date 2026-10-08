@@ -5,6 +5,7 @@ import {
   validateDatabaseConfigSchema
 } from './lib/database-config-validation/'
 import { Experience } from './lib/'
+import { validateAllViewerJson } from './validate-viewer'
 import * as packages from './packages'
 
 import camelCase from 'lodash/camelCase'
@@ -52,4 +53,5 @@ if (process.argv.length > 2) {
 } else {
   // test all packages
   Object.entries(packages).forEach(test)
+  validateAllViewerJson()
 }

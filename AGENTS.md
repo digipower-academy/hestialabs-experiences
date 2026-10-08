@@ -48,7 +48,7 @@ An experience is `packages/packages/experiences/<name>/`:
   - `vizProps` for that component.
   - Text and translations go in `messages.{en,fr}` (format: `packages/MESSAGES_JSON.md`).
 - Every pipeline returns `{ headers, items }`.
-- Types: `packages/lib/types/`.
+- Types: `packages/lib/types/`. The viewer JSON format is a JSON Schema, `packages/schemas/viewer/v1.json`, checked by `npm test`.
 - A minimal example: `packages/packages/experiences/database-template/`.
 
 When you add an experience, also:
@@ -71,4 +71,5 @@ When you add an experience, also:
 - `packages/README.md`: monorepo, creating a package, publishing.
 - `how-to-create-an-experience.md` and `README-how-to-create-a-new-experience.md`: authoring guides. The second one is the most recent (bespoke Vue views, stores, tours).
 - `packages/MESSAGES_JSON.md`: translation format for viewer JSON.
+- `packages/schemas/README.md`: the viewer JSON schema and its versioning rules.
 - `I18N.md`: outdated design notes, kept for history.

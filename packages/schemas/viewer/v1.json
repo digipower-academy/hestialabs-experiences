@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/digipower-academy/hestialabs-experiences/master/packages/schemas/viewer/v1.json",
+  "title": "Experience viewer options, version 1",
+  "description": "What a data experience shows: its tabs (view blocks), texts and translations. One file per experience: packages/packages/experiences/<name>/src/<name>-viewer.json. See packages/schemas/README.md for the versioning rules.",
+  "type": "object",
+  "required": ["title", "version", "viewBlocks"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "version": {
+      "description": "Version of this format. Loaders declare the smallest version they support (loaderOptions.viewerVersion).",
+      "const": 1
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "subtitle": { "type": "string" },
+    "dataPortal": {
+      "description": "Link to the page where people download their data.",
+      "type": "string"
+    },
+    "dataPortalHtml": {
+      "description": "HTML alternative to dataPortal, e.g. instructions for a mobile app.",
+      "type": "string"
+    },
+    "dataPortalMessage": {
+      "description": "Additional HTML hints shown with the data portal.",
+      "type": "string"
+    },
+    "icon": {
+      "description": "URL or path of an icon, typically the company logo.",
+      "type": "string"
+    },
+    "url": {
+      "description": "Alternative URL for placeholder experiences without real content.",
+      "type": "string"
+    },
+    "hideEmptyTabs": { "type": "boolean" },
+    "hideFileExplorer": { "type": "boolean" },
+    "hideSummary": { "type": "boolean" },
+    "dataSamples": {
+      "description": "Sample exports people can try the experience with.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tutorialVideos": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "collaborator": {
+      "description": "Partner organisation shown with the experience.",
+      "type": "object",
+      "required": ["icon", "title", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "icon": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "viewBlocks": {
+      "description": "The tabs of the experience, in display order.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/viewBlock" }
+    },
+    "messages": {
+      "description": "Translations by language code. Experience-specific texts that override the monolingual fields above.",
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+      "additionalProperties": { "$ref": "#/definitions/languageMessages" }
+    }
+  },
+  "definitions": {
+    "viewBlock": {
+      "type": "object",
+      "required": ["id", "title", "text"],
+      "additionalProperties": false,
+      "anyOf": [{ "required": ["sql"] }, { "required": ["customPipeline"] }],
+      "properties": {
+        "id": {
+          "description": "Stable identifier of the tab, unique within the experience. Translations and shared results refer to it.",
+          "type": "string",
+          "minLength": 1
+        },
+        "title": { "type": "string" },
+        "text": { "type": "string" },
+        "image": { "type": "string" },
+        "overlay": { "type": ["string", "boolean"] },
+        "showTable": { "type": "boolean" },
+        "files": {
+          "description": "File ids (keys of loaderOptions.files) this tab needs.",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "sql": {
+          "description": "Query run on the experience's SQLite database. Ignored when customPipeline is set.",
+          "type": "string"
+        },
+        "customPipeline": {
+          "description": "Name of a pipeline exported by the experience's viewer-functions.ts, or a generic pipeline from data-experience.",
+          "type": "string"
+        },
+        "customPipelineOptions": { "type": ["object", "array"] },
+        "postprocessor": {
+          "description": "Name of a postprocessor exported by the experience's viewer-functions.ts.",
+          "type": "string"
+        },
+        "visualization": {
+          "description": "A Vue component under data-experience/src/components/chart/view/ (e.g. \"ChartViewDashboard.vue\"), a Kepler map (\"/kepler...\"), or an inline Vega specification.",
+          "oneOf": [
+            { "type": "string", "pattern": "(\\.vue$)|(^/kepler)" },
+            { "type": "object" }
+          ]
+        },
+        "vizProps": {
+          "description": "Properties passed to the visualization component.",
+          "type": "object"
+        }
+      }
+    },
+    "languageMessages": {
+      "type": "object",
+      "properties": {
+        "intro": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": { "type": "string" },
+            "subtitle": { "type": "string" },
+            "dataPortal": { "type": "string" },
+            "dataPortalHtml": { "type": "string" },
+            "dataPortalMessage": { "type": "string" }
+          }
+        },
+        "viewBlocks": {
+          "description": "Translations per view block id.",
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/viewBlockMessages" }
+        }
+      },
+      "additionalProperties": { "type": "object" }
+    },
+    "viewBlockMessages": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "text": { "type": "string" },
+        "overlay": { "type": "string" },
+        "headers": {
+          "description": "Table header names by column.",
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "vizProps": {
+          "description": "Translated properties, deep-merged over the block's vizProps.",
+          "type": "object"
+        }
+      },
+      "additionalProperties": { "type": ["string", "object"] }
+    }
+  }
+}
