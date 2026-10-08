@@ -4,8 +4,8 @@
   "description": "Monorepo for HestiaLabs Experiences",
   "version": "2.0.0",
   "engines": {
-    "npm": "8.x",
-    "node": "18.x"
+    "npm": ">=10",
+    "node": ">=22"
   },
   "type": "module",
   "workspaces": [

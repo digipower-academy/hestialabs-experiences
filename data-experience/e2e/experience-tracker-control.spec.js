@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { test, expect } from './fixtures.js'
 
 test('experience-tracker-control', async({ page }) => {
   test.setTimeout(180000)
@@ -11,7 +11,7 @@ test('experience-tracker-control', async({ page }) => {
     // Ignore regular log messages; we are only interested in errors.
     if (msg.type() === 'error') {
       const messageText = msg.text()
-      const shouldIgnore = ignoredConsoleErrorPatterns.some((pattern) => messageText.includes(pattern))
+      const shouldIgnore = ignoredConsoleErrorPatterns.some(pattern => messageText.includes(pattern))
       if (!shouldIgnore) {
         messages.push(`[${msg.type()}] ${messageText}`)
       }

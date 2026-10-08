@@ -118,24 +118,12 @@ This document explains the architecture and configuration required to integrate 
 
 ## Node and npm versions
 
-The main project README recommends using **Node 18.x** and **npm 8.x**.
+The project uses **Node 22** (pinned in [`.nvmrc`](.nvmrc)) and **npm 10** or later, as described in the root [README.md](README.md).
 
-For the Data4Workers experiences, we tested the setup successfully with:
-
-- **Node 18.x**
-- **npm 10.x**
-
-The experiences worked correctly in our development and testing environment without requiring changes related to npm 10.
-
-If compatibility issues occur, follow the original project recommendation and use **npm 8.x**.
-
-To change the npm version you can install `nvm` if you don't have it already: [install instruction](https://github.com/nvm-sh/nvm) or with HomeBrew `brew install nvm`. Then install `lts/hydrogen`: 
+To switch versions you can install `nvm` if you don't have it already: [install instruction](https://github.com/nvm-sh/nvm) or with HomeBrew `brew install nvm`. Then, from the repository root:
 ```sh
-nvm install lts/hydrogen
-```
-And finally set the correct version of `npm` to run this project: 
-```sh
-nvm use lts/hydrogen
+nvm install
+nvm use
 ```
 
 ## Step-by-step guide
@@ -228,17 +216,7 @@ The experiences implemented in this project work entirely within the frontend en
 ---
 
 ## Node and npm versions
-The root project [README.md](README.md) recommends using:
-
-- **Node 18.x**
-- **npm 8.x**
-
-During development of the Data4Workers experiences, the project was successfully run with:
-
-- **Node 18.x**
-- **npm 10.x**
-
-If dependency or build issues occur, we recommend following the original project setup and using **npm 8.x**.
+See [Node and npm versions](#node-and-npm-versions) above: **Node 22** and **npm 10** or later.
 
 ---
 

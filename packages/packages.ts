@@ -1,10 +1,11 @@
-s/* Please keep the below exports in alphabetical order */
+/* Please keep the below exports in alphabetical order */
 export { default as adRadar } from './packages/experiences/ad-radar/dist/index.mjs'
 export { default as appleTracker } from './packages/experiences/apple-tracker/dist/index.mjs'
 export { default as appleTrackerAgg } from './packages/experiences/apple-tracker-agg/dist/index.mjs'
 export { default as babysits } from './packages/experiences/babysits/dist/index.mjs'
 export { default as chatgpt } from './packages/experiences/chatgpt/dist/index.mjs'
 export { default as explorer } from './packages/experiences/explorer/dist/index.mjs'
+export { default as explorerTimeline } from './packages/experiences/explorer-timeline/dist/index.mjs'
 export { default as facebook } from './packages/experiences/facebook/dist/index.mjs'
 export { default as fitbit } from './packages/experiences/fitbit/dist/index.mjs'
 export { default as google } from './packages/experiences/google/dist/index.mjs'
@@ -26,6 +27,7 @@ export { default as twitterAgg } from './packages/experiences/twitter-agg/dist/i
 export { default as uber } from './packages/experiences/uber/dist/index.mjs'
 export { default as uberDriver } from './packages/experiences/uber-driver/dist/index.mjs'
 export { default as uberEats } from './packages/experiences/uber-eats/dist/index.mjs'
+export { default as uberRider } from './packages/experiences/uber-rider/dist/index.mjs'
 export { default as youtube } from './packages/experiences/youtube/dist/index.mjs'
 export { default as wolt } from './packages/experiences/wolt/dist/index.mjs'
 export { default as databaseTemplate } from './packages/experiences/database-template/dist/index.mjs'
