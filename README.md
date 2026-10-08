@@ -10,7 +10,7 @@ This repo currently contains three projects:
 This repo is also dependent on the [bubble-server](https://github.com/hestiaAI/hestialabs-bubble-server)
 
 ## Setup
-**You must use the correct version of npm (8.x) and node (18.x) for this project, we recommend using `nvm` ([installation](https://heynode.com/tutorial/install-nodejs-locally-nvm/)).**
+**This project needs Node 22 (LTS) and npm 10 or later. The version is pinned in [`.nvmrc`](.nvmrc); we recommend using `nvm` ([installation](https://heynode.com/tutorial/install-nodejs-locally-nvm/)).**
 
 First create a new directory, and clone this repo and the bubble-server:
 ```sh
@@ -19,13 +19,10 @@ git clone https://github.com/hestiaAI/hestialabs-bubble-server.git
 ```
 
 You must use the correct version of node and npm to run the project (note that nvm for Windows may have a different syntax.)
-First install `nvm` if you don't have it already: [install instruction](https://github.com/nvm-sh/nvm) or with HomeBrew `brew install nvm`. Then install `lts/hydrogen`: 
+First install `nvm` if you don't have it already: [install instruction](https://github.com/nvm-sh/nvm) or with HomeBrew `brew install nvm`. Then, from the repository root, install and use the version from `.nvmrc`:
 ```sh
-nvm install nvm/hydrogen
-```
-And finally set the correct version of `npm` to run this project: 
-```sh
-nvm use lts/hydrogen
+nvm install
+nvm use
 ```
 
 Then install and build the bubble-server:

@@ -17,7 +17,7 @@
     "test": "jest",
     "perf:ubereats": "cross-env RUN_PERF=true jest src/__tests__/uber-eats/performance --runInBand",
     "perf:babysits": "cross-env RUN_PERF=true jest src/__tests__/babysits/performance --runInBand",
-    "perf:all": "cross-env RUN_PERF=true jest src/__tests__/{uber-eats,babysits}/performance --runInBand",
+    "perf:all": "cross-env RUN_PERF=true jest \"src/__tests__/(uber-eats|babysits)/performance\" --runInBand",
     "postinstall": "node postinstall.cjs",
     "dev": "npm-run-all -p -r dev:bubble-server dev:monorepo dev:app",
     "dev:app": "vue-cli-service serve ./dev/main.js --open --host 0.0.0.0",
@@ -84,7 +84,6 @@
     "@vue/test-utils": "^1.3.0",
     "@vue/vue2-jest": "^27.0.0-alpha.3",
     "babel-plugin-transform-import-meta": "^2.2.0",
-    "canvas": "^2.10.2",
     "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
     "dotenv": "^16.0.3",
@@ -152,7 +151,6 @@
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
       "<rootDir>/e2e/",
-      "<rootDir>/tests-examples/",
       "\\.helpers\\.js",
       "testSetup.js"
     ],

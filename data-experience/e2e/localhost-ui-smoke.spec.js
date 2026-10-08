@@ -1,6 +1,6 @@
-import { test, expect } from '@playwright/test'
+import { test, expect } from './fixtures.js'
 
-test('localhost app renders and basic UI interaction works', async ({ page }) => {
+test('localhost app renders and basic UI interaction works', async({ page }) => {
   await page.goto('http://localhost:8080/', { waitUntil: 'domcontentloaded' })
 
   await expect(page.locator('#app')).toBeVisible()

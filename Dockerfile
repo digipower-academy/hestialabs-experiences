@@ -1,4 +1,4 @@
-FROM node:18-bullseye
+FROM node:22-bookworm
 
 WORKDIR /app
 ENV NODE_ENV=development
