@@ -103,12 +103,16 @@ This directory contains the configuration files linked to each deployment. They 
   ],
   /**
    * DISCLAIMER: THIS OPTION IS ONLY FOR THE NUXT APP
-   * The bubbles that are included in this website.
+   * The bubbles that are included in this website: a name on the site's default
+   * bubble server (API_URL), or a URL for a bubble on another server,
+   * https://<server>/bubbles/<name>. A bubble from another server is shown at
+   * /space/<name>@<host>.
    * @type Array
    */
   "bubbles": [
     "workshop-x-participant",
-    "workshop-x-aggregator"
+    "workshop-x-aggregator",
+    "https://bubbles.example.org/bubbles/study-participant"
   ],
   /**
    * DISCLAIMER: THIS OPTION IS ONLY FOR THE NUXT APP

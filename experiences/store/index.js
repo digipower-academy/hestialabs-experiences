@@ -1,7 +1,7 @@
 import { set } from 'vue'
 
 import { merge } from 'lodash-es'
-import BubbleAPI from 'data-experience/src/utils/bubble-api'
+import BubbleAPI, { bubbleKey } from 'data-experience/src/utils/bubble-api'
 
 import { mapTranslationObject } from '@/utils/directusHelpers'
 
@@ -142,7 +142,8 @@ export const actions = {
           try {
             const data = await bubbleAPI.getConfig(bubble)
             if (data) {
-              config.bubbleConfig[bubble] = data
+              // a name on the default server, or a URL (https://<server>/bubbles/<name>)
+              config.bubbleConfig[bubbleKey(bubble, process.env.apiUrl)] = data
             }
           } catch (error) {
             console.error(error)
@@ -153,6 +154,10 @@ export const actions = {
             }
           }
         }
+        // homePageBubbles may also use URLs; match them by key
+        config.homePageBubbles = (config.homePageBubbles || []).map(
+          bubble => bubbleKey(bubble, process.env.apiUrl)
+        )
       }
       commit('setConfig', config)
     }
