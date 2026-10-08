@@ -1,0 +1,5460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`apple-tracker with apple-tracker.ndjson view block outputs match the snapshots: IOSAccess 1`] = `
+Object {
+  "count": 3608,
+  "firstItems": Array [
+    Object {
+      "app": "com.apple.mobilecal",
+      "category": "contacts",
+      "identifier": "000F7820-637A-4230-AC62-E5C40265658E",
+      "identifierType": "bundleID",
+      "kind": "intervalBegin",
+      "timestamp": "2022-04-29T08:03:50.126+02:00",
+      "type": "access",
+    },
+    Object {
+      "app": "com.apple.mobilephone",
+      "category": "contacts",
+      "identifier": "002CCCA8-E0C7-4E5A-8267-2BAFD6FA03A9",
+      "identifierType": "bundleID",
+      "kind": "intervalBegin",
+      "timestamp": "2022-04-30T14:49:53.848+02:00",
+      "type": "access",
+    },
+    Object {
+      "app": "net.whatsapp.WhatsApp",
+      "category": "photos",
+      "identifier": "004169CA-1371-45E4-B114-C4DD6C770C63",
+      "identifierType": "bundleID",
+      "kind": "intervalBegin",
+      "timestamp": "2022-04-28T02:40:20.216+02:00",
+      "type": "access",
+    },
+  ],
+  "headers": Array [
+    "app",
+    "identifierType",
+    "category",
+    "identifier",
+    "kind",
+    "timestamp",
+    "type",
+  ],
+  "sha256": "e115887232de582376a9ab6ea0ecfcbc3f8615b980b00f8e4f7e320b321aa6ac",
+}
+`;
+
+exports[`apple-tracker with apple-tracker.ndjson view block outputs match the snapshots: IOSNetwork 1`] = `
+Object {
+  "count": 1241,
+  "firstItems": Array [
+    Object {
+      "bundleId": "com.blockfolio.blockfolio",
+      "context": "",
+      "domain": "platform-api.blockfolio.com",
+      "domainOwner": "",
+      "domainType": "2",
+      "firstTimeStamp": "2022-05-06T23:46:04.761+02:00",
+      "hits": "137",
+      "initiatedType": "AppInitiated",
+      "timeStamp": "2022-05-16T19:42:38.500+02:00",
+      "type": "networkActivity",
+    },
+    Object {
+      "bundleId": "com.blockfolio.blockfolio",
+      "context": "",
+      "domain": "api.amplitude.com",
+      "domainOwner": "",
+      "domainType": "2",
+      "firstTimeStamp": "2022-05-06T23:46:04.754+02:00",
+      "hits": "93",
+      "initiatedType": "AppInitiated",
+      "timeStamp": "2022-05-16T19:42:36.578+02:00",
+      "type": "networkActivity",
+    },
+    Object {
+      "bundleId": "com.blockfolio.blockfolio",
+      "context": "",
+      "domain": "app-measurement.com",
+      "domainOwner": "Google LLC",
+      "domainType": "1",
+      "firstTimeStamp": "2022-05-07T04:50:40.030+02:00",
+      "hits": "8",
+      "initiatedType": "AppInitiated",
+      "timeStamp": "2022-05-16T12:53:24.765+02:00",
+      "type": "networkActivity",
+    },
+  ],
+  "headers": Array [
+    "domain",
+    "firstTimeStamp",
+    "context",
+    "timeStamp",
+    "domainType",
+    "initiatedType",
+    "hits",
+    "type",
+    "domainOwner",
+    "bundleId",
+  ],
+  "sha256": "853338324d222542d7d8251fdf733b2100500286f926540259392afc43150aaa",
+}
+`;
+
+exports[`apple-tracker-agg with apple-tracker.ndjson view block outputs match the snapshots: IOSAccess 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`apple-tracker-agg with apple-tracker.ndjson view block outputs match the snapshots: IOSNetwork 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`babysits with babysits-sample.zip view block outputs match the snapshots: activityTypes 1`] = `
+Object {
+  "count": 65,
+  "firstItems": Array [
+    Object {
+      "category": "Ménage",
+      "date": "2024-07-05",
+      "duration_hours": 2,
+      "earnings": 48,
+      "end_time": "18:00",
+      "job_id": "20802850",
+      "job_type": "Ménage à domicile",
+      "location": "Lausanne",
+      "start_time": "16:00",
+      "status": "postulated",
+    },
+    Object {
+      "category": "Aménagement",
+      "date": "2024-07-06",
+      "duration_hours": 6,
+      "earnings": 174,
+      "end_time": "19:00",
+      "job_id": "18605106",
+      "job_type": "Montage de meubles IKEA",
+      "location": "Vevey",
+      "start_time": "13:00",
+      "status": "postulated",
+    },
+    Object {
+      "category": "Entretien de la pelouse",
+      "date": "2024-07-10",
+      "duration_hours": 3,
+      "earnings": 72,
+      "end_time": "16:30",
+      "job_id": "15388333",
+      "job_type": "Désherbage",
+      "location": "Epalinges",
+      "start_time": "13:30",
+      "status": "postulated",
+    },
+  ],
+  "headers": Array [
+    "job_id",
+    "date",
+    "start_time",
+    "end_time",
+    "duration_hours",
+    "earnings",
+    "location",
+    "job_type",
+    "status",
+    "category",
+  ],
+  "sha256": "17e4169feaa99b47757211e90ee8cf97156bd5efd22a852f55d63922479fbde9",
+}
+`;
+
+exports[`babysits with babysits-sample.zip view block outputs match the snapshots: earningsDistribution 1`] = `
+Object {
+  "count": 65,
+  "firstItems": Array [
+    Object {
+      "category": "Ménage",
+      "date": "2024-07-05",
+      "duration_hours": 2,
+      "earnings": 48,
+      "end_time": "18:00",
+      "job_id": "20802850",
+      "job_type": "Ménage à domicile",
+      "location": "Lausanne",
+      "start_time": "16:00",
+      "status": "postulated",
+    },
+    Object {
+      "category": "Aménagement",
+      "date": "2024-07-06",
+      "duration_hours": 6,
+      "earnings": 174,
+      "end_time": "19:00",
+      "job_id": "18605106",
+      "job_type": "Montage de meubles IKEA",
+      "location": "Vevey",
+      "start_time": "13:00",
+      "status": "postulated",
+    },
+    Object {
+      "category": "Entretien de la pelouse",
+      "date": "2024-07-10",
+      "duration_hours": 3,
+      "earnings": 72,
+      "end_time": "16:30",
+      "job_id": "15388333",
+      "job_type": "Désherbage",
+      "location": "Epalinges",
+      "start_time": "13:30",
+      "status": "postulated",
+    },
+  ],
+  "headers": Array [
+    "job_id",
+    "date",
+    "start_time",
+    "end_time",
+    "duration_hours",
+    "earnings",
+    "location",
+    "job_type",
+    "status",
+    "category",
+  ],
+  "sha256": "17e4169feaa99b47757211e90ee8cf97156bd5efd22a852f55d63922479fbde9",
+}
+`;
+
+exports[`babysits with babysits-sample.zip view block outputs match the snapshots: shiftTimeline 1`] = `
+Object {
+  "count": 65,
+  "firstItems": Array [
+    Object {
+      "category": "Ménage",
+      "date": "2024-07-05",
+      "duration_hours": 2,
+      "earnings": 48,
+      "end_time": "18:00",
+      "job_id": "20802850",
+      "job_type": "Ménage à domicile",
+      "location": "Lausanne",
+      "start_time": "16:00",
+      "status": "postulated",
+    },
+    Object {
+      "category": "Aménagement",
+      "date": "2024-07-06",
+      "duration_hours": 6,
+      "earnings": 174,
+      "end_time": "19:00",
+      "job_id": "18605106",
+      "job_type": "Montage de meubles IKEA",
+      "location": "Vevey",
+      "start_time": "13:00",
+      "status": "postulated",
+    },
+    Object {
+      "category": "Entretien de la pelouse",
+      "date": "2024-07-10",
+      "duration_hours": 3,
+      "earnings": 72,
+      "end_time": "16:30",
+      "job_id": "15388333",
+      "job_type": "Désherbage",
+      "location": "Epalinges",
+      "start_time": "13:30",
+      "status": "postulated",
+    },
+  ],
+  "headers": Array [
+    "job_id",
+    "date",
+    "start_time",
+    "end_time",
+    "duration_hours",
+    "earnings",
+    "location",
+    "job_type",
+    "status",
+    "category",
+  ],
+  "sha256": "17e4169feaa99b47757211e90ee8cf97156bd5efd22a852f55d63922479fbde9",
+}
+`;
+
+exports[`database-template with wolt.zip view block outputs match the snapshots: courierTasks 1`] = `
+Object {
+  "count": 814,
+  "firstItems": Array [
+    Object {
+      "beginDate": "2020-04-24 16:19:34.025",
+    },
+    Object {
+      "beginDate": "2020-05-07 15:07:02.476",
+    },
+    Object {
+      "beginDate": "2020-04-24 16:43:28.318",
+    },
+  ],
+  "headers": Array [
+    "beginDate",
+  ],
+  "sha256": "9d9443ffab844fee33a9c60b02713e1504057425a5c43e8c5d46f662f837bf64",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: ad-interactions 1`] = `
+Object {
+  "count": 63,
+  "firstItems": Array [
+    Object {
+      "action": "Clic sur publicité",
+      "timestamp": "2021-04-21 01:04:20",
+      "title": "Anderson-Robertson",
+    },
+    Object {
+      "action": "Clic sur publicité",
+      "timestamp": "2021-01-01 19:39:20",
+      "title": "Bell and Sons",
+    },
+    Object {
+      "action": "Clic sur publicité",
+      "timestamp": "2020-07-18 19:38:14",
+      "title": "Brown-Davis",
+    },
+  ],
+  "headers": Array [
+    "title",
+    "action",
+    "timestamp",
+  ],
+  "sha256": "8f1a8077b6d7fadade216e0f10fbccd0aba79f8ea02bc2a3b2c420a07910dfa4",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: advertisers-contact-list 1`] = `
+Object {
+  "count": 55,
+  "firstItems": Array [
+    Object {
+      "name": "Thompson-Frazier",
+    },
+    Object {
+      "name": "Blevins-Taylor",
+    },
+    Object {
+      "name": "White, Johnson and Johnson",
+    },
+  ],
+  "headers": Array [
+    "name",
+  ],
+  "sha256": "d90a5852bb4b7e8e3bb5dbc72a47fc3c3b0bfa5ccf1a1d156d303725ffb768ca",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: custom-audiences 1`] = `
+Object {
+  "count": 70,
+  "firstItems": Array [
+    Object {
+      "advertiserName": "Francis, Tran and Hebert",
+      "hasDataFileCustomAudience": "true",
+      "hasInPersonStoreVisit": "true",
+      "hasRemarketingCustomAudience": "false",
+    },
+    Object {
+      "advertiserName": "Hogan Ltd",
+      "hasDataFileCustomAudience": "true",
+      "hasInPersonStoreVisit": "true",
+      "hasRemarketingCustomAudience": "false",
+    },
+    Object {
+      "advertiserName": "Mcmahon Group",
+      "hasDataFileCustomAudience": "false",
+      "hasInPersonStoreVisit": "true",
+      "hasRemarketingCustomAudience": "true",
+    },
+  ],
+  "headers": Array [
+    "advertiserName",
+    "hasDataFileCustomAudience",
+    "hasRemarketingCustomAudience",
+    "hasInPersonStoreVisit",
+  ],
+  "sha256": "84d0720d40d6f2fc2001364f3aa0150aa6ce75ba636516f03f99f8480eea1a82",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: genericDateViewer 1`] = `
+Object {
+  "count": 1867,
+  "firstItems": Array [
+    Object {
+      "date": Object {},
+      "description": "Off Facebook Activity V 2 > Events > [Id : 1352425571809883, Type : CUSTOM]",
+      "filename": "Facebook-fake-data/apps_and_websites_off_of_facebook/your_off-facebook_activity.…",
+    },
+    Object {
+      "date": Object {},
+      "description": "Off Facebook Activity V 2 > Events > [Id : 159306912964078, Type : CUSTOM]",
+      "filename": "Facebook-fake-data/apps_and_websites_off_of_facebook/your_off-facebook_activity.…",
+    },
+    Object {
+      "date": Object {},
+      "description": "Off Facebook Activity V 2 > Events > [Id : 159306912964078, Type : CUSTOM]",
+      "filename": "Facebook-fake-data/apps_and_websites_off_of_facebook/your_off-facebook_activity.…",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "description",
+    "filename",
+  ],
+  "sha256": "870d0123cb8ca1102ff98fc1543034060ce5e070143cbe3f2fe4a6ad95afe306",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: genericLocationViewer 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [
+    "filename",
+    "latitude",
+    "longitude",
+    "path",
+    "description",
+  ],
+  "sha256": "b8e33101bb1ba60305589a4ac58eee0178408fe48726998095b0651a26f92a5e",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: off-facebook-activity-count 1`] = `
+Object {
+  "count": 1780,
+  "firstItems": Array [
+    Object {
+      "advertiserName": "20 Minuten (CH)",
+      "count_": 1,
+      "date_": 1593892620,
+    },
+    Object {
+      "advertiserName": "20 Minuten (CH)",
+      "count_": 1,
+      "date_": 1598548740,
+    },
+    Object {
+      "advertiserName": "20 Minuten (CH)",
+      "count_": 1,
+      "date_": 1599425220,
+    },
+  ],
+  "headers": Array [
+    "advertiserName",
+    "date_",
+    "count_",
+  ],
+  "sha256": "c455c63187a6b2e6f2c078b13b5abfc9c1aa3624c1c3974130b7da9135a1906c",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: off-facebook-activity-type-count 1`] = `
+Object {
+  "count": 31,
+  "firstItems": Array [
+    Object {
+      "group": "Blockfolio: Buy Bitcoin Now",
+      "id": 2,
+      "name": "ACTIVATE_APP",
+      "parent": 1,
+      "size": 46,
+      "value": 46,
+    },
+    Object {
+      "group": "Blockfolio: Buy Bitcoin Now",
+      "id": 1,
+      "name": "Blockfolio: Buy Bitcoin Now",
+      "parent": 0,
+      "size": null,
+      "value": 46,
+    },
+    Object {
+      "group": "Clash Royale",
+      "id": 4,
+      "name": "ACTIVATE_APP",
+      "parent": 3,
+      "size": 476,
+      "value": 476,
+    },
+  ],
+  "headers": Array [
+    "id",
+    "name",
+    "value",
+    "group",
+    "parent",
+    "size",
+  ],
+  "sha256": "90cc87b3439a34d41c7df39c49a5ee526735e0db39604b3c72800e3c50afee8e",
+}
+`;
+
+exports[`facebook with facebook.zip view block outputs match the snapshots: your-topics 1`] = `
+Object {
+  "count": 8,
+  "firstItems": Array [
+    Object {
+      "name": "Château",
+    },
+    Object {
+      "name": "Konbini",
+    },
+    Object {
+      "name": "Mont Blanc",
+    },
+  ],
+  "headers": Array [
+    "name",
+  ],
+  "sha256": "a2be1ec58460c3336215c78cac59d6589f1f4f4718804ede113e9c97889aa406",
+}
+`;
+
+exports[`google with google-takeout.zip view block outputs match the snapshots: ActivitySegment 1`] = `
+Object {
+  "count": 55,
+  "firstItems": Array [
+    Object {
+      "activityType": "WALKING",
+      "confidence": "MEDIUM",
+      "distanceMeters": 1157,
+      "endAddress": null,
+      "endLatitude": 46.5270904,
+      "endLongitude": 6.6417616,
+      "endName": null,
+      "endTimestamp": "2022-03-07T17:50:04.057Z",
+      "startAddress": null,
+      "startLatitude": 46.5212212,
+      "startLongitude": 6.6324561,
+      "startName": null,
+      "startTimestamp": "2022-03-07T17:35:16.486Z",
+      "transitPath": "null",
+    },
+    Object {
+      "activityType": "IN_SUBWAY",
+      "confidence": "LOW",
+      "distanceMeters": 1102,
+      "endAddress": null,
+      "endLatitude": 46.5203667,
+      "endLongitude": 6.6303173,
+      "endName": null,
+      "endTimestamp": "2022-03-07T18:00:58.941Z",
+      "startAddress": null,
+      "startLatitude": 46.5266035,
+      "startLongitude": 6.6415161,
+      "startName": null,
+      "startTimestamp": "2022-03-07T17:54:48.258Z",
+      "transitPath": "m2: CHUV -> Lausanne-Flon",
+    },
+    Object {
+      "activityType": "IN_BUS",
+      "confidence": "MEDIUM",
+      "distanceMeters": 3581,
+      "endAddress": null,
+      "endLatitude": 46.5381475,
+      "endLongitude": 6.595101499999999,
+      "endName": null,
+      "endTimestamp": "2022-03-07T18:23:17.064Z",
+      "startAddress": null,
+      "startLatitude": 46.5208343,
+      "startLongitude": 6.6299109,
+      "startName": null,
+      "startTimestamp": "2022-03-07T18:07:02.728Z",
+      "transitPath": "18: Lausanne-Flon -> Renens VD, Bourg Dessus",
+    },
+  ],
+  "headers": Array [
+    "startLatitude",
+    "startLongitude",
+    "startAddress",
+    "startName",
+    "startTimestamp",
+    "endLatitude",
+    "endLongitude",
+    "endAddress",
+    "endName",
+    "endTimestamp",
+    "confidence",
+    "transitPath",
+    "distanceMeters",
+    "activityType",
+  ],
+  "sha256": "578d5a1c58b349086086fa098c4ee198068779c32c8907866075433a1b0e4649",
+}
+`;
+
+exports[`google with google-takeout.zip view block outputs match the snapshots: OnePlace 1`] = `
+Object {
+  "count": 274,
+  "firstItems": Array [
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserAddress": "Pl. de la Gare 10
+1003 Lausanne
+Suisse",
+      "loserConfidence": 29.506325,
+      "loserLatitude": 46.5177565,
+      "loserLongitude": 6.628457,
+      "loserName": "Powerhouse",
+      "loserSemanticType": null,
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerAddress": "Lausanne
+Suisse",
+      "winnerConfidence": 100,
+      "winnerLatitude": 46.5196535,
+      "winnerLongitude": 6.6322734,
+      "winnerName": "Lausanne",
+      "winnerSemanticType": null,
+    },
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserAddress": "Rue du Petit-Chêne 38
+1003 Lausanne
+Suisse",
+      "loserConfidence": 24.491941,
+      "loserLatitude": 46.5178795,
+      "loserLongitude": 6.6289836,
+      "loserName": "InnoPark SA - Suisse romande",
+      "loserSemanticType": null,
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerAddress": "Lausanne
+Suisse",
+      "winnerConfidence": 100,
+      "winnerLatitude": 46.5196535,
+      "winnerLongitude": 6.6322734,
+      "winnerName": "Lausanne",
+      "winnerSemanticType": null,
+    },
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserAddress": "Pl. de la Gare 5A
+1003 Lausanne
+Suisse",
+      "loserConfidence": 11.10266,
+      "loserLatitude": 46.5170797,
+      "loserLongitude": 6.6291932,
+      "loserName": "Lausanne",
+      "loserSemanticType": null,
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerAddress": "Lausanne
+Suisse",
+      "winnerConfidence": 100,
+      "winnerLatitude": 46.5196535,
+      "winnerLongitude": 6.6322734,
+      "winnerName": "Lausanne",
+      "winnerSemanticType": null,
+    },
+  ],
+  "headers": Array [
+    "winnerLatitude",
+    "winnerLongitude",
+    "winnerAddress",
+    "winnerName",
+    "winnerConfidence",
+    "winnerSemanticType",
+    "loserLatitude",
+    "loserLongitude",
+    "loserAddress",
+    "loserName",
+    "loserConfidence",
+    "loserSemanticType",
+    "startTimestamp",
+    "endTimestamp",
+  ],
+  "sha256": "99d8f2e8218e167b69816f2f657e388d48cab551eac8d84e141c2b811f81d13c",
+}
+`;
+
+exports[`google with google-takeout.zip view block outputs match the snapshots: OtherCandidates 1`] = `
+Object {
+  "count": 274,
+  "firstItems": Array [
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserAddress": "Pl. de la Gare 10
+1003 Lausanne
+Suisse",
+      "loserConfidence": 29.506325,
+      "loserLatitude": 46.5177565,
+      "loserLongitude": 6.628457,
+      "loserName": "Powerhouse",
+      "loserSemanticType": null,
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerAddress": "Lausanne
+Suisse",
+      "winnerConfidence": 100,
+      "winnerLatitude": 46.5196535,
+      "winnerLongitude": 6.6322734,
+      "winnerName": "Lausanne",
+      "winnerSemanticType": null,
+    },
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserAddress": "Rue du Petit-Chêne 38
+1003 Lausanne
+Suisse",
+      "loserConfidence": 24.491941,
+      "loserLatitude": 46.5178795,
+      "loserLongitude": 6.6289836,
+      "loserName": "InnoPark SA - Suisse romande",
+      "loserSemanticType": null,
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerAddress": "Lausanne
+Suisse",
+      "winnerConfidence": 100,
+      "winnerLatitude": 46.5196535,
+      "winnerLongitude": 6.6322734,
+      "winnerName": "Lausanne",
+      "winnerSemanticType": null,
+    },
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserAddress": "Pl. de la Gare 5A
+1003 Lausanne
+Suisse",
+      "loserConfidence": 11.10266,
+      "loserLatitude": 46.5170797,
+      "loserLongitude": 6.6291932,
+      "loserName": "Lausanne",
+      "loserSemanticType": null,
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerAddress": "Lausanne
+Suisse",
+      "winnerConfidence": 100,
+      "winnerLatitude": 46.5196535,
+      "winnerLongitude": 6.6322734,
+      "winnerName": "Lausanne",
+      "winnerSemanticType": null,
+    },
+  ],
+  "headers": Array [
+    "winnerLatitude",
+    "winnerLongitude",
+    "winnerAddress",
+    "winnerName",
+    "winnerConfidence",
+    "winnerSemanticType",
+    "loserLatitude",
+    "loserLongitude",
+    "loserAddress",
+    "loserName",
+    "loserConfidence",
+    "loserSemanticType",
+    "startTimestamp",
+    "endTimestamp",
+  ],
+  "sha256": "99d8f2e8218e167b69816f2f657e388d48cab551eac8d84e141c2b811f81d13c",
+}
+`;
+
+exports[`google with google-takeout.zip view block outputs match the snapshots: PlaceVisited 1`] = `
+Object {
+  "count": 54,
+  "firstItems": Array [
+    Object {
+      "address": "Lausanne
+Suisse",
+      "duration": 14695,
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "latitude": 46.5196535,
+      "locationConfidence": 100,
+      "longitude": 6.6322734,
+      "name": "Lausanne",
+      "placeVisitImportance": "MAIN",
+      "semanticType": null,
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "visitConfidence": 100,
+    },
+    Object {
+      "address": "Rue du Pont 10
+1003 Lausanne
+Suisse",
+      "duration": 1055,
+      "endTimestamp": "2022-03-07T17:35:16.486Z",
+      "latitude": 46.5213897,
+      "locationConfidence": 34,
+      "longitude": 6.6330881999999995,
+      "name": "VIU Eyewear",
+      "placeVisitImportance": "MAIN",
+      "semanticType": null,
+      "startTimestamp": "2022-03-07T17:17:40.918Z",
+      "visitConfidence": 89,
+    },
+    Object {
+      "address": "1011 Lausanne
+Suisse",
+      "duration": 284,
+      "endTimestamp": "2022-03-07T17:54:48.258Z",
+      "latitude": 46.5264871,
+      "locationConfidence": 76,
+      "longitude": 6.641551799999999,
+      "name": "CHUV",
+      "placeVisitImportance": "TRANSITIONAL",
+      "semanticType": null,
+      "startTimestamp": "2022-03-07T17:50:04.057Z",
+      "visitConfidence": 78,
+    },
+  ],
+  "headers": Array [
+    "latitude",
+    "longitude",
+    "address",
+    "name",
+    "startTimestamp",
+    "endTimestamp",
+    "placeVisitImportance",
+    "visitConfidence",
+    "locationConfidence",
+    "duration",
+    "semanticType",
+  ],
+  "sha256": "ab74d10478a29c6cb8204f792f7539e8fea3c28a6b0fc8599625f003e84cfa2d",
+}
+`;
+
+exports[`google with google-takeout.zip view block outputs match the snapshots: Records 1`] = `
+Object {
+  "count": 1072,
+  "firstItems": Array [
+    Object {
+      "accuracy": 64,
+      "activityType": "IN_BUS",
+      "latitude": 46.5121277,
+      "longitude": 6.628146,
+      "source": "WIFI",
+      "timestamp": "2022-04-10T19:26:40.969Z",
+    },
+    Object {
+      "accuracy": 60,
+      "activityType": "IN_BUS",
+      "latitude": 46.399215,
+      "longitude": 6.580975899999999,
+      "source": "WIFI",
+      "timestamp": "2022-04-10T18:28:42.008Z",
+    },
+    Object {
+      "accuracy": 64,
+      "activityType": "IN_BUS",
+      "latitude": 46.218239499999996,
+      "longitude": 6.5012124,
+      "source": "WIFI",
+      "timestamp": "2022-04-10T17:50:00.197Z",
+    },
+  ],
+  "headers": Array [
+    "latitude",
+    "longitude",
+    "timestamp",
+    "accuracy",
+    "source",
+    "activityType",
+  ],
+  "sha256": "ce25e3ea22081bb5da32fc098862c75599eac79b5888393081172333dfec1578",
+}
+`;
+
+exports[`google with google-takeout.zip view block outputs match the snapshots: WifiScan 1`] = `
+Object {
+  "count": 1864,
+  "firstItems": Array [
+    Object {
+      "latitude": 46.52131040034486,
+      "longitude": 6.633123001465503,
+      "mac": "83:68:11:04:56:94:67",
+      "number_of_detections": 1160,
+    },
+    Object {
+      "latitude": 46.52131060232994,
+      "longitude": 6.6331242051257995,
+      "mac": "17:61:99:43:10:40:11:4",
+      "number_of_detections": 1073,
+    },
+    Object {
+      "latitude": 46.5213110337111,
+      "longitude": 6.633123418130303,
+      "mac": "24:64:64:24:48:79:77:2",
+      "number_of_detections": 1059,
+    },
+  ],
+  "headers": Array [
+    "mac",
+    "latitude",
+    "longitude",
+    "number_of_detections",
+  ],
+  "sha256": "3f7686cd0965796aeea558ad2d0280e18f064c2681997ddc48330f82dc011368",
+}
+`;
+
+exports[`google-agg with generated participant data view block outputs match the snapshots: MeansOfTransport 1`] = `
+Object {
+  "count": 2144,
+  "firstItems": Array [
+    Object {
+      "accuracy": 64,
+      "activityType": "IN_BUS",
+      "latitude": 46.5121277,
+      "longitude": 6.628146,
+      "source": "WIFI",
+      "timestamp": "2022-04-10T19:26:40.969Z",
+    },
+    Object {
+      "accuracy": 60,
+      "activityType": "IN_BUS",
+      "latitude": 46.399215,
+      "longitude": 6.580975899999999,
+      "source": "WIFI",
+      "timestamp": "2022-04-10T18:28:42.008Z",
+    },
+    Object {
+      "accuracy": 64,
+      "activityType": "IN_BUS",
+      "latitude": 46.218239499999996,
+      "longitude": 6.5012124,
+      "source": "WIFI",
+      "timestamp": "2022-04-10T17:50:00.197Z",
+    },
+  ],
+  "headers": Array [
+    "latitude",
+    "longitude",
+    "timestamp",
+    "accuracy",
+    "source",
+    "activityType",
+  ],
+  "sha256": "6b9da4060f8d70337934795e3b7c8f881966b8d6b9beeee01c12358ba8eeb7dd",
+}
+`;
+
+exports[`google-agg with generated participant data view block outputs match the snapshots: OnePlace 1`] = `
+Object {
+  "count": 548,
+  "firstItems": Array [
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserConfidence": 29.506325,
+      "loserLatitude": 46.5177565,
+      "loserLongitude": 6.628457,
+      "loserName": "Powerhouse",
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerConfidence": 100,
+      "winnerName": "Lausanne",
+    },
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserConfidence": 24.491941,
+      "loserLatitude": 46.5178795,
+      "loserLongitude": 6.6289836,
+      "loserName": "InnoPark SA - Suisse romande",
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerConfidence": 100,
+      "winnerName": "Lausanne",
+    },
+    Object {
+      "endTimestamp": "2022-03-07T17:13:38.828Z",
+      "loserConfidence": 11.10266,
+      "loserLatitude": 46.5170797,
+      "loserLongitude": 6.6291932,
+      "loserName": "Lausanne",
+      "startTimestamp": "2022-03-07T13:08:43.398Z",
+      "winnerConfidence": 100,
+      "winnerName": "Lausanne",
+    },
+  ],
+  "headers": Array [
+    "winnerName",
+    "loserName",
+    "winnerConfidence",
+    "startTimestamp",
+    "endTimestamp",
+    "loserLatitude",
+    "loserLongitude",
+    "loserConfidence",
+  ],
+  "sha256": "257968b281e6d313f6411d822310f2df93d5a662f6237703d2aa8461e1083518",
+}
+`;
+
+exports[`google-agg with generated participant data view block outputs match the snapshots: PlaceSearched 1`] = `
+Object {
+  "count": 18,
+  "firstItems": Array [
+    Object {
+      "k": 2,
+      "latitude": 46.2182591,
+      "longitude": 6.5011689,
+      "name": "138 Chem. de la Pierre a L’Aigle",
+    },
+    Object {
+      "k": 2,
+      "latitude": 46.239750799999996,
+      "longitude": 6.650068699999999,
+      "name": "1000 Rte des Grandes Alpes",
+    },
+    Object {
+      "k": 2,
+      "latitude": 46.241830199999995,
+      "longitude": 6.651057,
+      "name": "71 Rte de la Villaz",
+    },
+  ],
+  "headers": Array [
+    "latitude",
+    "longitude",
+    "name",
+    "k",
+  ],
+  "sha256": "667321952b6acf48eb3f683d74308f2c88ee69d9ddf5c8ec6368b1117379ed1d",
+}
+`;
+
+exports[`google-agg with generated participant data view block outputs match the snapshots: PlaceVisited 1`] = `
+Object {
+  "count": 27,
+  "firstItems": Array [
+    Object {
+      "address": "Lausanne
+Suisse",
+      "k": 2,
+      "latitude": 46.5196535,
+      "longitude": 6.6322734,
+      "name": "Lausanne",
+    },
+    Object {
+      "address": "Rue du Pont 10
+1003 Lausanne
+Suisse",
+      "k": 2,
+      "latitude": 46.5213897,
+      "longitude": 6.6330881999999995,
+      "name": "VIU Eyewear",
+    },
+    Object {
+      "address": "1011 Lausanne
+Suisse",
+      "k": 2,
+      "latitude": 46.5264871,
+      "longitude": 6.641551799999999,
+      "name": "CHUV",
+    },
+  ],
+  "headers": Array [
+    "latitude",
+    "longitude",
+    "address",
+    "name",
+    "k",
+  ],
+  "sha256": "94f3a1de56cf55b434385d9331315c8fda99094e6859970d46b65d3ebbeae8e5",
+}
+`;
+
+exports[`google-agg with generated participant data view block outputs match the snapshots: PublicTransport 1`] = `
+Object {
+  "count": 12,
+  "firstItems": Array [
+    Object {
+      "endLatitude": 46.5203667,
+      "endLongitude": 6.6303173,
+      "k": 2,
+      "startLatitude": 46.5266035,
+      "startLongitude": 6.6415161,
+      "transitPath": "m2: CHUV -> Lausanne-Flon",
+    },
+    Object {
+      "endLatitude": 46.5381475,
+      "endLongitude": 6.595101499999999,
+      "k": 2,
+      "startLatitude": 46.5208343,
+      "startLongitude": 6.6299109,
+      "transitPath": "18: Lausanne-Flon -> Renens VD, Bourg Dessus",
+    },
+    Object {
+      "endLatitude": 46.5211192,
+      "endLongitude": 6.632351099999999,
+      "k": 2,
+      "startLatitude": 46.4021937,
+      "startLongitude": 6.5903842,
+      "transitPath": "TER: Gare d'Évian-les-Bains -> Annemasse",
+    },
+  ],
+  "headers": Array [
+    "startLatitude",
+    "startLongitude",
+    "endLatitude",
+    "endLongitude",
+    "transitPath",
+    "k",
+  ],
+  "sha256": "5ffe270e1f555bb2c1ceef58f0aa9d9899463709aafb56ac5489c18be3b4c0a6",
+}
+`;
+
+exports[`google-agg with generated participant data view block outputs match the snapshots: Wifi 1`] = `
+Object {
+  "count": 3728,
+  "firstItems": Array [
+    Object {
+      "k": 2,
+      "latitude": 46.52131040034486,
+      "longitude": 6.633123001465503,
+      "mac": "83:68:11:04:56:94:67",
+    },
+    Object {
+      "k": 2,
+      "latitude": 46.52131060232994,
+      "longitude": 6.6331242051257995,
+      "mac": "17:61:99:43:10:40:11:4",
+    },
+    Object {
+      "k": 2,
+      "latitude": 46.5213110337111,
+      "longitude": 6.633123418130303,
+      "mac": "24:64:64:24:48:79:77:2",
+    },
+  ],
+  "headers": Array [
+    "mac",
+    "latitude",
+    "longitude",
+    "k",
+  ],
+  "sha256": "705586102542d005f170a4f54d277cafef6dbee2bd000d675b2481f6b7695737",
+}
+`;
+
+exports[`her with her.zip view block outputs match the snapshots: blocked 1`] = `
+Object {
+  "count": 1000,
+  "firstItems": Array [
+    Object {
+      "blockedAt": "2020-05-23 00:07:55",
+      "name": "Kristy Wolfe",
+    },
+    Object {
+      "blockedAt": "2021-02-02 20:45:05",
+      "name": "Rhonda Chen",
+    },
+    Object {
+      "blockedAt": "2021-08-15 17:43:51",
+      "name": "Jesus Hall",
+    },
+  ],
+  "headers": Array [
+    "name",
+    "blockedAt",
+  ],
+  "sha256": "ff9883e416fa4c004fc7963b201ef79f5dd56cb4704ec516f0189b8da6dce09d",
+}
+`;
+
+exports[`her with her.zip view block outputs match the snapshots: liked 1`] = `
+Object {
+  "count": 993,
+  "firstItems": Array [
+    Object {
+      "actionCount": 1,
+      "actionValue": "Like",
+      "date_": "2020-04-25",
+    },
+    Object {
+      "actionCount": 1,
+      "actionValue": "Like",
+      "date_": "2020-04-26",
+    },
+    Object {
+      "actionCount": 1,
+      "actionValue": "Skip",
+      "date_": "2020-04-26",
+    },
+  ],
+  "headers": Array [
+    "date_",
+    "actionValue",
+    "actionCount",
+  ],
+  "sha256": "e2a005864ec15689facd9cfe5c8fafaf86699a931c320c5677ca9d69ed579b9c",
+}
+`;
+
+exports[`her with her.zip view block outputs match the snapshots: matches 1`] = `
+Object {
+  "count": 1000,
+  "firstItems": Array [
+    Object {
+      "likedAt": "2021-01-02 09:21:33",
+      "matched": "True",
+      "name": "Edgar Pierce",
+    },
+    Object {
+      "likedAt": "2020-08-01 04:56:47",
+      "matched": "True",
+      "name": "Renee Rice",
+    },
+    Object {
+      "likedAt": "2021-04-06 22:09:01",
+      "matched": "False",
+      "name": "Stacy Payne",
+    },
+  ],
+  "headers": Array [
+    "name",
+    "likedAt",
+    "matched",
+  ],
+  "sha256": "1a152e341e6b4d9c9e4f3bb83b0f2b9c6e7d59f822f87189c577158a86449562",
+}
+`;
+
+exports[`her with her.zip view block outputs match the snapshots: messages 1`] = `
+Object {
+  "count": 1000,
+  "firstItems": Array [
+    Object {
+      "conversationId": "2083",
+      "message": "Center participant suggest peace.",
+      "messageSentAt": "2021-11-20 22:43:59",
+      "messageType": "Message",
+      "sender": "Elizabeth Martin",
+    },
+    Object {
+      "conversationId": "3139",
+      "message": "Though risk but guy choice.",
+      "messageSentAt": "2021-02-25 02:56:08",
+      "messageType": "Message",
+      "sender": "Tracy Cooper",
+    },
+    Object {
+      "conversationId": "683",
+      "message": "Minute loss ok can other machine want.",
+      "messageSentAt": "2021-06-19 23:03:00",
+      "messageType": "Match message",
+      "sender": "David Sanders",
+    },
+  ],
+  "headers": Array [
+    "conversationId",
+    "message",
+    "messageType",
+    "sender",
+    "messageSentAt",
+  ],
+  "sha256": "59fb82c787d6094d31b6a770481439ed11d488e1882338dc11a07577a5f4d958",
+}
+`;
+
+exports[`her with her.zip view block outputs match the snapshots: notifications 1`] = `
+Object {
+  "count": 1000,
+  "firstItems": Array [
+    Object {
+      "notificationSentAt": "2020-10-18 22:42:06",
+      "notificationType": "liked_you",
+      "sender": "Brenda Morales",
+    },
+    Object {
+      "notificationSentAt": "2021-02-23 19:12:31",
+      "notificationType": "friend",
+      "sender": "Christina Jackson",
+    },
+    Object {
+      "notificationSentAt": "2020-07-18 04:58:30",
+      "notificationType": "liked_you",
+      "sender": "Kyle Bender",
+    },
+  ],
+  "headers": Array [
+    "sender",
+    "notificationType",
+    "notificationSentAt",
+  ],
+  "sha256": "ce16b0b195f0a8ced8965f61b3c4c64a432786ca78aae86ef22fc821a83f2475",
+}
+`;
+
+exports[`her with her.zip view block outputs match the snapshots: profiles 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "birthday": "1991/11/05",
+      "customLocation": "46.516, 6.6653",
+      "email": "caroline.dupont@gmail.com",
+      "fullName": "Caroline Dupont",
+      "heightInCm": "152",
+      "lastOnlineUtc": "46.516, 6.6653",
+      "lastUsedFilters": "Min age: 20, Max Age: 99, Max Distance: 10",
+      "location": "46.5216, 6.63653",
+      "name": "Caro",
+      "pushNotificationsEnabled": "true",
+      "registrationDateUtc": "2020-04-27 21:39:58",
+      "status": "Active",
+    },
+  ],
+  "headers": Array [
+    "name",
+    "fullName",
+    "birthday",
+    "lastOnlineUtc",
+    "registrationDateUtc",
+    "email",
+    "pushNotificationsEnabled",
+    "lastUsedFilters",
+    "heightInCm",
+    "location",
+    "customLocation",
+    "status",
+  ],
+  "sha256": "07232cac1c4dabcb8d0170fa17e61050302d2847fb28df6993d88f6d057e7e10",
+}
+`;
+
+exports[`her with her.zip view block outputs match the snapshots: reported 1`] = `
+Object {
+  "count": 1000,
+  "firstItems": Array [
+    Object {
+      "reason": "no_face",
+      "reportedAt": "2020-05-20 17:36:46",
+      "reportedType": "user",
+    },
+    Object {
+      "reason": "insulting",
+      "reportedAt": "2020-09-23 04:09:25",
+      "reportedType": "app",
+    },
+    Object {
+      "reason": "no_face",
+      "reportedAt": "2021-06-05 11:11:21",
+      "reportedType": "app",
+    },
+  ],
+  "headers": Array [
+    "reportedType",
+    "reason",
+    "reportedAt",
+  ],
+  "sha256": "010517fce0fe01d2672e332e1527b1fc1427ec3a5b3c8a4c7b4a3e5b785e9d87",
+}
+`;
+
+exports[`her-tinder-agg with generated participant data view block outputs match the snapshots: overview 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`her-tinder-agg with generated participant data view block outputs match the snapshots: sqlAllperApp 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`her-tinder-agg with generated participant data view block outputs match the snapshots: sqlAllperSo 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: ad-advertisers 1`] = `
+Object {
+  "count": 1090,
+  "firstItems": Array [
+    Object {
+      "advertiserName": "Airbnb",
+      "hasDataFileCustomAudience": "true",
+      "hasInPersonStoreVisit": "false",
+      "hasRemarketingCustomAudience": "true",
+    },
+    Object {
+      "advertiserName": "Havas Media France ADM",
+      "hasDataFileCustomAudience": "true",
+      "hasInPersonStoreVisit": "false",
+      "hasRemarketingCustomAudience": "true",
+    },
+    Object {
+      "advertiserName": "Habu",
+      "hasDataFileCustomAudience": "true",
+      "hasInPersonStoreVisit": "false",
+      "hasRemarketingCustomAudience": "false",
+    },
+  ],
+  "headers": Array [
+    "advertiserName",
+    "hasDataFileCustomAudience",
+    "hasRemarketingCustomAudience",
+    "hasInPersonStoreVisit",
+  ],
+  "sha256": "b86d09ca1d0990605f6bc4452b6a1ce472ba6cf1ed474a1793cfc5df90c6ea3c",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: ad-interactions 1`] = `
+Object {
+  "count": 512,
+  "firstItems": Array [
+    Object {
+      "_date": "2019-04-08 07:32:00",
+      "clicked": "False",
+      "title": "Adams LLC",
+    },
+    Object {
+      "_date": "2018-09-11 17:26:00",
+      "clicked": "False",
+      "title": "Adams, Lopez and Snyder",
+    },
+    Object {
+      "_date": "2022-03-26 03:17:00",
+      "clicked": "False",
+      "title": "Aguirre, Arroyo and Marsh",
+    },
+  ],
+  "headers": Array [
+    "title",
+    "_date",
+    "clicked",
+  ],
+  "sha256": "2da044e8a7cb00f0df847323062d62a0371985a98ef10e4c6c0943908d79c6c8",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: ad-interests 1`] = `
+Object {
+  "count": 725,
+  "firstItems": Array [
+    Object {
+      "_type": "Topic",
+      "title": "2010-2019 Video Games",
+    },
+    Object {
+      "_type": "Ad Interest",
+      "title": "9GAG",
+    },
+    Object {
+      "_type": "Ad Interest",
+      "title": "A Bathing Ape",
+    },
+  ],
+  "headers": Array [
+    "title",
+    "_type",
+  ],
+  "sha256": "0294395bb6db493c12e152fcde99c86bb2a49ae9d49ec88cd3f1ab503f623f43",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: consumption 1`] = `
+Object {
+  "count": 1410,
+  "firstItems": Array [
+    Object {
+      "accountName": "Aaron.bass",
+      "actionDate": "2019-04-23 21:16:00",
+      "actionType": "Post Viewed",
+    },
+    Object {
+      "accountName": "Aaron.blanchard",
+      "actionDate": "2019-06-21 22:20:00",
+      "actionType": "Post Viewed",
+    },
+    Object {
+      "accountName": "Abigail.hester",
+      "actionDate": "2021-01-26 17:13:00",
+      "actionType": "Video Watched",
+    },
+  ],
+  "headers": Array [
+    "accountName",
+    "actionDate",
+    "actionType",
+  ],
+  "sha256": "df36067248053e7f9d5020a6c194c83b9a4e011cf27ac5f815fd215d84fe357d",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: consumption-time 1`] = `
+Object {
+  "count": 6,
+  "firstItems": Array [
+    Object {
+      "actions": Array [
+        "Video Watched",
+      ],
+      "duration_m": 1,
+      "end_date": "2022-12-28 12:15:00",
+      "end_timestamp": 1672229700000,
+      "nb_actions": 1,
+      "start_date": "2022-12-28 12:15:00",
+      "start_timestamp": 1672229700000,
+    },
+    Object {
+      "actions": Array [
+        "Ad Viewed",
+      ],
+      "duration_m": 1,
+      "end_date": "2022-12-29 10:09:00",
+      "end_timestamp": 1672308540000,
+      "nb_actions": 1,
+      "start_date": "2022-12-29 10:09:00",
+      "start_timestamp": 1672308540000,
+    },
+    Object {
+      "actions": Array [
+        "Ad Viewed",
+      ],
+      "duration_m": 1,
+      "end_date": "2022-12-30 04:20:00",
+      "end_timestamp": 1672374000000,
+      "nb_actions": 1,
+      "start_date": "2022-12-30 04:20:00",
+      "start_timestamp": 1672374000000,
+    },
+  ],
+  "headers": Array [
+    "start_date",
+    "end_date",
+    "nb_actions",
+    "actions",
+    "duration_m",
+  ],
+  "sha256": "28d65cd4ef1508b01d5afa9fdb513080142af9a7ecfdedd9d3eafeb11deb6168",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: genericDateViewer 1`] = `
+Object {
+  "count": 1851,
+  "firstItems": Array [
+    Object {
+      "date": Object {},
+      "description": "Likes Comment Likes > String List Data > [Href : https://www.instagram.com/p/exa…",
+      "filename": "Instagram-fake-data/likes/liked_comments.json",
+    },
+    Object {
+      "date": Object {},
+      "description": "Likes Comment Likes > String List Data > [Href : https://www.instagram.com/p/exa…",
+      "filename": "Instagram-fake-data/likes/liked_comments.json",
+    },
+    Object {
+      "date": Object {},
+      "description": "Likes Comment Likes > String List Data > [Href : https://www.instagram.com/p/exa…",
+      "filename": "Instagram-fake-data/likes/liked_comments.json",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "description",
+    "filename",
+  ],
+  "sha256": "e1b85adc967bea6b39fa5d8e614750e668ff500722d699978dcab67c8108356c",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: interactions 1`] = `
+Object {
+  "count": 1317,
+  "firstItems": Array [
+    Object {
+      "_date": "2008-11-20 07:58:37",
+      "accountName": "Amber Barrett",
+      "interactionType": "Message Received",
+    },
+    Object {
+      "_date": "2009-06-15 22:10:31",
+      "accountName": "Amber Barrett",
+      "interactionType": "Message Received",
+    },
+    Object {
+      "_date": "2009-10-09 11:10:44",
+      "accountName": "Amber Barrett",
+      "interactionType": "Message Received",
+    },
+  ],
+  "headers": Array [
+    "accountName",
+    "_date",
+    "interactionType",
+  ],
+  "sha256": "57c93537375dc1cf8665c709f7ddf8acb5453be8b47a22718e4e120ddad261f3",
+}
+`;
+
+exports[`instagram with instagramV2.zip view block outputs match the snapshots: localisation 1`] = `
+Object {
+  "count": 333,
+  "firstItems": Array [
+    Object {
+      "_date": "2018-06-09 18:33:28",
+      "actionType": "Post",
+      "latitude": "53.37596",
+      "longitude": "51.3452",
+      "title": "Accept far pressure spend Mrs.",
+    },
+    Object {
+      "_date": "2018-10-23 18:05:12",
+      "actionType": "Post",
+      "latitude": "29.65163",
+      "longitude": "-82.32483",
+      "title": "Act reflect point everything rise.",
+    },
+    Object {
+      "_date": "2019-09-05 00:23:20",
+      "actionType": "Story",
+      "latitude": "46.65581",
+      "longitude": "32.6178",
+      "title": "Activity any blue partner.",
+    },
+  ],
+  "headers": Array [
+    "title",
+    "_date",
+    "latitude",
+    "longitude",
+    "actionType",
+  ],
+  "sha256": "35f174be13b129187f2ffbd0415aa20e7c5b4ccee305a03d744a8e121a228410",
+}
+`;
+
+exports[`linkedin with linkedin.zip view block outputs match the snapshots: ad-targeting 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "companyCategory": "",
+      "companyConnections": "Croix-Rouge française; Freshfields Bruckhaus Deringer; Clarins; EY; SNCF Réseau;…",
+      "companyFollowerOf": "Lewis; Moore and Spencer; Ball-Preston ; Lin PLC; EPFL (École polytechnique fédé…",
+      "companyGrowthRate": "",
+      "companyIndustries": "Information Technology & Services",
+      "companyNames": "Lin PLC ",
+      "companyRevenue": "",
+      "companySize": "2-10 employees",
+      "degreeClass": "200; 500",
+      "degrees": "Bachelor's Degree; Master's Degree",
+      "fieldsOfStudy": "Computer Software Engineering; Computer Engineering; Computer Science; ENGINEERI…",
+      "functionBySize": "",
+      "graduationYear": "2021",
+      "interfaceLocale": "fr_FR",
+      "interfaceLocales": "French",
+      "jobFunctions": "Engineering",
+      "jobSeniorities": "Entry",
+      "jobTitles": "",
+      "memberAge": "18 to 24",
+      "memberGender": "Male",
+      "memberGroups": "",
+      "memberInterests": "Cloud Computing; Cloud Accounting; Government; Online Media; Data Protection and…",
+      "memberSchools": "EPFL (École polytechnique fédérale de Lausanne); La vie",
+      "memberSkills": "Data Engineering; Academic Background; PyTorch; Visualization; NumPy; Intelligen…",
+      "memberTraits": "Mac; Recently Switched Jobs; Desktop/Laptop Users; iPhone Users; Career Changers",
+      "profileLocations": "Switzerland; Switzerland; EMEA; Canton of Vaud; Lausanne; Europe; Vaud; DACH; Eu…",
+      "yearsOfExperience": "1 year",
+    },
+  ],
+  "headers": Array [
+    "memberAge",
+    "companyNames",
+    "companyNames",
+    "companyFollowerOf",
+    "companyNames",
+    "companyCategory",
+    "companySize",
+    "degrees",
+    "degreeClass",
+    "memberSchools",
+    "companyGrowthRate",
+    "fieldsOfStudy",
+    "companyConnections",
+    "functionBySize",
+    "jobFunctions",
+    "memberGender",
+    "graduationYear",
+    "memberGroups",
+    "companyIndustries",
+    "memberInterests",
+    "interfaceLocales",
+    "interfaceLocale",
+    "memberTraits",
+    "profileLocations",
+    "companyRevenue",
+    "jobSeniorities",
+    "memberSkills",
+    "jobTitles",
+    "jobTitles",
+    "jobTitles",
+    "yearsOfExperience",
+  ],
+  "sha256": "f5e90315892d857177153752e0a54ce9eae778ddcdd52d5a79b4b246c075ebdc",
+}
+`;
+
+exports[`linkedin with linkedin.zip view block outputs match the snapshots: connections 1`] = `
+Object {
+  "count": 3000,
+  "firstItems": Array [
+    Object {
+      "company": "Morris, Maddox and Harris",
+      "connectedOn": "15 Mar 2009",
+      "emailAddress": "carla.smith@hogan.com",
+      "firstName": "Carla",
+      "lastName": "Smith",
+      "position": "Producer, television/film/video",
+    },
+    Object {
+      "company": "Lin PLC",
+      "connectedOn": "04 Dec 2012",
+      "emailAddress": "jennifer.moran@sheppard.com",
+      "firstName": "Jennifer",
+      "lastName": "Moran",
+      "position": "Accountant, chartered",
+    },
+    Object {
+      "company": "Lewis, Moore and Spencer",
+      "connectedOn": "16 Dec 2018",
+      "emailAddress": "benjamin.sawyer@munoz-jordan.com",
+      "firstName": "Benjamin",
+      "lastName": "Sawyer",
+      "position": "Sales professional, IT",
+    },
+  ],
+  "headers": Array [
+    "firstName",
+    "lastName",
+    "emailAddress",
+    "company",
+    "position",
+    "connectedOn",
+  ],
+  "sha256": "c0dc2dc236985886e42e93166dab8271fac140c907fd208acff92f5d23b0e0a1",
+}
+`;
+
+exports[`linkedin with linkedin.zip view block outputs match the snapshots: genericDateViewer 1`] = `
+Object {
+  "count": 2068,
+  "firstItems": Array [
+    Object {
+      "date": Object {},
+      "description": "Connected On : [First Name : Carla, Last Name : Smith, Email Address : carla.smi…",
+      "filename": "Linkedin-fake-data/Connections.csv",
+    },
+    Object {
+      "date": Object {},
+      "description": "Connected On : [First Name : Benjamin, Last Name : Sawyer, Email Address : benja…",
+      "filename": "Linkedin-fake-data/Connections.csv",
+    },
+    Object {
+      "date": Object {},
+      "description": "Connected On : [First Name : David, Last Name : Parker, Email Address : david.pa…",
+      "filename": "Linkedin-fake-data/Connections.csv",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "description",
+    "filename",
+  ],
+  "sha256": "7b5516471517138112f33893c030922e32682f42c6b032115dcb8ccde46d3bac",
+}
+`;
+
+exports[`linkedin with linkedin.zip view block outputs match the snapshots: inference 1`] = `
+Object {
+  "count": 18,
+  "firstItems": Array [
+    Object {
+      "category": "Career inferences",
+      "description": "Based on factors such as your industry and profile headline.",
+      "inference": "No",
+      "typeOfInference": "Human resources professional",
+    },
+    Object {
+      "category": "Career inferences",
+      "description": "Based on the current position on your profile and other factors.",
+      "inference": "No",
+      "typeOfInference": "Unemployment Status",
+    },
+    Object {
+      "category": "Career inferences",
+      "description": "Executive leader at your company. Based on your experience on your profile and o…",
+      "inference": "No",
+      "typeOfInference": "Senior leader",
+    },
+  ],
+  "headers": Array [
+    "category",
+    "typeOfInference",
+    "description",
+    "inference",
+  ],
+  "sha256": "db1fcfe2f34725d4db805a4155ba997db30b8fba486d50ef547b7af8c88e1f4d",
+}
+`;
+
+exports[`linkedin-agg with generated participant data view block outputs match the snapshots: ad-targeting 1`] = `
+Object {
+  "count": 2,
+  "firstItems": Array [
+    Object {
+      "companyCategory": Array [],
+      "companyConnections": Array [
+        "Croix-Rouge française",
+        " Freshfields Bruckhaus Deringer",
+        " Clarins",
+        " EY",
+        " SNCF Réseau",
+      ],
+      "companyFollowerOf": Array [
+        "Lewis",
+        " Moore and Spencer",
+        " Ball-Preston ",
+        " Lin PLC",
+        " EPFL (École polytechnique fédérale de Lausanne)",
+      ],
+      "companyGrowthRate": Array [],
+      "companyIndustries": Array [
+        "Information Technology & Services",
+      ],
+      "companyNames": Array [
+        "Lin PLC ",
+      ],
+      "companyRevenue": Array [],
+      "companySize": Array [
+        "2-10 employees",
+      ],
+      "degreeClass": Array [
+        "200",
+        " 500",
+      ],
+      "degrees": Array [
+        "Bachelor's Degree",
+        " Master's Degree",
+      ],
+      "fieldsOfStudy": Array [
+        "Computer Software Engineering",
+        " Computer Engineering",
+        " Computer Science",
+        " ENGINEERING",
+        " COMPUTER AND INFORMATION SCIENCES AND SUPPORT SERVICES",
+      ],
+      "filePath": Array [
+        "linkedin_participant1.zip/block01.json",
+      ],
+      "functionBySize": Array [],
+      "graduationYear": Array [
+        "2021",
+      ],
+      "interfaceLocale": Array [
+        "fr_FR",
+      ],
+      "interfaceLocales": Array [
+        "French",
+      ],
+      "jobFunctions": Array [
+        "Engineering",
+      ],
+      "jobSeniorities": Array [
+        "Entry",
+      ],
+      "jobTitles": Array [],
+      "memberAge": Array [
+        "18 to 24",
+      ],
+      "memberGender": Array [
+        "Male",
+      ],
+      "memberGroups": Array [],
+      "memberInterests": Array [
+        "Cloud Computing",
+        " Cloud Accounting",
+        " Government",
+        " Online Media",
+        " Data Protection and Privacy in Business",
+      ],
+      "memberSchools": Array [
+        "EPFL (École polytechnique fédérale de Lausanne)",
+        " La vie",
+      ],
+      "memberSkills": Array [
+        "Data Engineering",
+        " Academic Background",
+        " PyTorch",
+        " Visualization",
+        " NumPy",
+      ],
+      "memberTraits": Array [
+        "Mac",
+        " Recently Switched Jobs",
+        " Desktop/Laptop Users",
+        " iPhone Users",
+        " Career Changers",
+      ],
+      "profileLocations": Array [
+        "Switzerland",
+        " Switzerland",
+        " EMEA",
+        " Canton of Vaud",
+        " Lausanne",
+      ],
+      "yearsOfExperience": Array [
+        "1 year",
+      ],
+    },
+    Object {
+      "companyCategory": Array [],
+      "companyConnections": Array [
+        "Croix-Rouge française",
+        " Freshfields Bruckhaus Deringer",
+        " Clarins",
+        " EY",
+        " SNCF Réseau",
+      ],
+      "companyFollowerOf": Array [
+        "Lewis",
+        " Moore and Spencer",
+        " Ball-Preston ",
+        " Lin PLC",
+        " EPFL (École polytechnique fédérale de Lausanne)",
+      ],
+      "companyGrowthRate": Array [],
+      "companyIndustries": Array [
+        "Information Technology & Services",
+      ],
+      "companyNames": Array [
+        "Lin PLC ",
+      ],
+      "companyRevenue": Array [],
+      "companySize": Array [
+        "2-10 employees",
+      ],
+      "degreeClass": Array [
+        "200",
+        " 500",
+      ],
+      "degrees": Array [
+        "Bachelor's Degree",
+        " Master's Degree",
+      ],
+      "fieldsOfStudy": Array [
+        "Computer Software Engineering",
+        " Computer Engineering",
+        " Computer Science",
+        " ENGINEERING",
+        " COMPUTER AND INFORMATION SCIENCES AND SUPPORT SERVICES",
+      ],
+      "filePath": Array [
+        "linkedin_participant2.zip/block01.json",
+      ],
+      "functionBySize": Array [],
+      "graduationYear": Array [
+        "2021",
+      ],
+      "interfaceLocale": Array [
+        "fr_FR",
+      ],
+      "interfaceLocales": Array [
+        "French",
+      ],
+      "jobFunctions": Array [
+        "Engineering",
+      ],
+      "jobSeniorities": Array [
+        "Entry",
+      ],
+      "jobTitles": Array [],
+      "memberAge": Array [
+        "18 to 24",
+      ],
+      "memberGender": Array [
+        "Male",
+      ],
+      "memberGroups": Array [],
+      "memberInterests": Array [
+        "Cloud Computing",
+        " Cloud Accounting",
+        " Government",
+        " Online Media",
+        " Data Protection and Privacy in Business",
+      ],
+      "memberSchools": Array [
+        "EPFL (École polytechnique fédérale de Lausanne)",
+        " La vie",
+      ],
+      "memberSkills": Array [
+        "Data Engineering",
+        " Academic Background",
+        " PyTorch",
+        " Visualization",
+        " NumPy",
+      ],
+      "memberTraits": Array [
+        "Mac",
+        " Recently Switched Jobs",
+        " Desktop/Laptop Users",
+        " iPhone Users",
+        " Career Changers",
+      ],
+      "profileLocations": Array [
+        "Switzerland",
+        " Switzerland",
+        " EMEA",
+        " Canton of Vaud",
+        " Lausanne",
+      ],
+      "yearsOfExperience": Array [
+        "1 year",
+      ],
+    },
+  ],
+  "headers": Array [
+    "memberAge",
+    "companyNames",
+    "companyFollowerOf",
+    "companyCategory",
+    "companySize",
+    "degrees",
+    "degreeClass",
+    "memberSchools",
+    "companyGrowthRate",
+    "fieldsOfStudy",
+    "companyConnections",
+    "functionBySize",
+    "jobFunctions",
+    "memberGender",
+    "graduationYear",
+    "memberGroups",
+    "companyIndustries",
+    "memberInterests",
+    "interfaceLocales",
+    "interfaceLocale",
+    "memberTraits",
+    "profileLocations",
+    "companyRevenue",
+    "jobSeniorities",
+    "memberSkills",
+    "jobTitles",
+    "yearsOfExperience",
+    "filePath",
+  ],
+  "sha256": "9ba94a390c5853e92b987f3456eb1d2ded41d47ee7628b998052f43a21bc1733",
+}
+`;
+
+exports[`linkedin-agg with generated participant data view block outputs match the snapshots: connections 1`] = `
+Object {
+  "count": 3000,
+  "firstItems": Array [
+    Object {
+      "company": "Jackson-Coleman",
+      "connectedOn": "10 Jan 2019",
+      "emailAddress": "aaron.andrews@mclaughlin-johnson.info",
+      "filePath": "linkedin_participant1.zip/block02.json",
+      "firstName": "Aaron",
+      "lastName": "Andrews",
+      "position": "Chartered accountant",
+      "rank": 1,
+    },
+    Object {
+      "company": "Mitchell Group",
+      "connectedOn": "21 Dec 2017",
+      "emailAddress": "aaron.banks@sampson-mitchell.com",
+      "filePath": "linkedin_participant1.zip/block02.json",
+      "firstName": "Aaron",
+      "lastName": "Banks",
+      "position": "Commissioning editor",
+      "rank": 1,
+    },
+    Object {
+      "company": "Barnett PLC",
+      "connectedOn": "13 Jul 2009",
+      "emailAddress": "aaron.burke@snyder-castillo.com",
+      "filePath": "linkedin_participant1.zip/block02.json",
+      "firstName": "Aaron",
+      "lastName": "Burke",
+      "position": "Advertising account executive",
+      "rank": 1,
+    },
+  ],
+  "headers": Array [
+    "firstName",
+    "lastName",
+    "emailAddress",
+    "company",
+    "position",
+    "connectedOn",
+    "filePath",
+    "rank",
+  ],
+  "sha256": "64aa8a58cd26c0bf1639a882ce8ac0fea59c23743ec28ee7e7855064fa786aae",
+}
+`;
+
+exports[`linkedin-agg with generated participant data view block outputs match the snapshots: inference 1`] = `
+Object {
+  "count": 18,
+  "firstItems": Array [
+    Object {
+      "SUBSTR(filepath, 0, INSTR(filepath, '/'))": "linkedin_participant1.zip",
+      "_count": 2,
+      "_total_profiles": 2,
+      "category": "Career inferences",
+      "description": "Based on factors such as your profile experience, summary, and headline.",
+      "inference": "true",
+      "typeOfInference": "Freelancer",
+    },
+    Object {
+      "SUBSTR(filepath, 0, INSTR(filepath, '/'))": "linkedin_participant1.zip",
+      "_count": 2,
+      "_total_profiles": 2,
+      "category": "Inferred interests",
+      "description": "Based on whether you follow companies in the higher education industry.",
+      "inference": "true",
+      "typeOfInference": "Interested in higher education",
+    },
+    Object {
+      "SUBSTR(filepath, 0, INSTR(filepath, '/'))": "linkedin_participant1.zip",
+      "_count": 2,
+      "_total_profiles": 2,
+      "category": "Inferred personal characteristics",
+      "description": "Recently moved to a new country in the past 6 months. Based on factors such as y…",
+      "inference": "true",
+      "typeOfInference": "Country newcomers",
+    },
+  ],
+  "headers": Array [
+    "category",
+    "typeOfInference",
+    "description",
+    "inference",
+    "SUBSTR(filepath, 0, INSTR(filepath, '/'))",
+    "_count",
+    "_total_profiles",
+  ],
+  "sha256": "a66ed96a17b60b2cb1965c706fa9922329442cef9ec6d4a758771aba9b8c7c16",
+}
+`;
+
+exports[`netflix with netflix.zip view block outputs match the snapshots: genericDateViewer 1`] = `
+Object {
+  "count": 7526,
+  "firstItems": Array [
+    Object {
+      "date": Object {},
+      "description": "Sent Utc Ts : [Profile Name : Martin, Message Name : INAPP_NEW_ARRIVALS, Channel…",
+      "filename": "NetflixFakeData/MESSAGES/MessagesSentByNetflix.csv",
+    },
+    Object {
+      "date": Object {},
+      "description": "Click Utc Ts : [Profile Name : Martin, Message Name : INAPP_NEW_ARRIVALS, Channe…",
+      "filename": "NetflixFakeData/MESSAGES/MessagesSentByNetflix.csv",
+    },
+    Object {
+      "date": Object {},
+      "description": "Sent Utc Ts : [Profile Name : Bob, Message Name : PUSH_NEW_ARRIVALS_REMIND_ME, C…",
+      "filename": "NetflixFakeData/MESSAGES/MessagesSentByNetflix.csv",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "description",
+    "filename",
+  ],
+  "sha256": "4b768e5de75909e5819ef761b58f14a8c541af9214382578f9bb971395b9ce94",
+}
+`;
+
+exports[`netflix with netflix.zip view block outputs match the snapshots: notifications 1`] = `
+Object {
+  "count": 3000,
+  "firstItems": Array [
+    Object {
+      "accountLocale": "",
+      "channel": "ALERTS",
+      "clickCnt": "1",
+      "clickUtcTs": "2020-06-21 03:57:35",
+      "countryIsoCode": "FR",
+      "deviceModel": "",
+      "emailDomainName": "GOOGLEMAIL.COM",
+      "emailLocale": "",
+      "linkUrl": "",
+      "messageName": "INAPP_NEW_ARRIVALS",
+      "profileName": "Martin",
+      "sentUtcTs": "2020-06-21 03:57:35",
+      "titleName": "Rachel Getting Married",
+    },
+    Object {
+      "accountLocale": "",
+      "channel": "PUSH",
+      "clickCnt": "0",
+      "clickUtcTs": "",
+      "countryIsoCode": "FR",
+      "deviceModel": "APPLE_iPhone12",
+      "emailDomainName": "GOOGLEMAIL.COM",
+      "emailLocale": "",
+      "linkUrl": "",
+      "messageName": "PUSH_NEW_ARRIVALS_REMIND_ME",
+      "profileName": "Bob",
+      "sentUtcTs": "2014-04-27 20:22:11",
+      "titleName": "Zack and Miri Make a Porno",
+    },
+    Object {
+      "accountLocale": "fr-FR",
+      "channel": "PUSH",
+      "clickCnt": "1",
+      "clickUtcTs": "2018-06-25 13:57:23",
+      "countryIsoCode": "GB",
+      "deviceModel": "",
+      "emailDomainName": "GOOGLEMAIL.COM",
+      "emailLocale": "fr-FR",
+      "linkUrl": "",
+      "messageName": "PUSH_YOU_MAY_HAVE_MISSED",
+      "profileName": "Martin",
+      "sentUtcTs": "2018-06-25 13:57:23",
+      "titleName": "License to Wed",
+    },
+  ],
+  "headers": Array [
+    "profileName",
+    "sentUtcTs",
+    "messageName",
+    "channel",
+    "countryIsoCode",
+    "accountLocale",
+    "emailLocale",
+    "titleName",
+    "emailDomainName",
+    "linkUrl",
+    "clickUtcTs",
+    "deviceModel",
+    "clickCnt",
+  ],
+  "sha256": "02753a2869fcc7d90e6485c91dcc3a5a4000a2e8e9caa3e0e1c12a29f4310c5f",
+}
+`;
+
+exports[`netflix with netflix.zip view block outputs match the snapshots: watchOverview 1`] = `
+Object {
+  "count": 3000,
+  "firstItems": Array [
+    Object {
+      "attributes": "View was hidden; Autoplayed: user action: None; ",
+      "bookmark": "1:59:59",
+      "country": "GB (United Kingdom)",
+      "deviceType": "Netflix Chrome MAC (Cadmium) HTML 5Samsung 2014 MStar DTV",
+      "duration": "1:59:59",
+      "latestBookmark": "1:59:59",
+      "profileName": "Ben",
+      "startTime": "2010-06-03 16:59:44",
+      "supplementalVideoType": "BIG_ROW",
+      "title": "Love & Other Drugs",
+    },
+    Object {
+      "attributes": "",
+      "bookmark": "0:03:58",
+      "country": "FR (France)",
+      "deviceType": "LG LG 2017 MStar M2R Standard DTV Smart TV",
+      "duration": "0:03:58",
+      "latestBookmark": "Not latest view",
+      "profileName": "Martin",
+      "startTime": "2021-10-10 20:50:47",
+      "supplementalVideoType": "PROMOTIONAL",
+      "title": "I Love You Phillip Morris",
+    },
+    Object {
+      "attributes": "Autoplayed: user action: None; ",
+      "bookmark": "0:17:21",
+      "country": "FR (France)",
+      "deviceType": "Google Chromecast streaming stick",
+      "duration": "0:17:21",
+      "latestBookmark": "Not latest view",
+      "profileName": "Ben",
+      "startTime": "2009-07-27 04:19:06",
+      "supplementalVideoType": "PROMOTIONAL",
+      "title": "Over Her Dead Body",
+    },
+  ],
+  "headers": Array [
+    "profileName",
+    "startTime",
+    "duration",
+    "attributes",
+    "title",
+    "supplementalVideoType",
+    "deviceType",
+    "bookmark",
+    "latestBookmark",
+    "country",
+  ],
+  "sha256": "a9134237951a1798b1baf646934cf376c46934b0c845dd08b0d9a7d4c3a269c1",
+}
+`;
+
+exports[`tiktok with tiktok.zip view block outputs match the snapshots: activityhistory 1`] = `
+Object {
+  "count": 6933,
+  "firstItems": Array [
+    Object {
+      "activityType": "Watch",
+      "activityValue": "https://www.tiktokv.com/share/video/5643124852999153680/",
+      "date_": "2008-01-01 14:04:59",
+    },
+    Object {
+      "activityType": "Watch",
+      "activityValue": "https://www.tiktokv.com/share/video/6193379789752124591/",
+      "date_": "2008-01-01 15:33:26",
+    },
+    Object {
+      "activityType": "Watch",
+      "activityValue": "https://www.tiktokv.com/share/video/2477641057600243515/",
+      "date_": "2008-01-02 12:12:21",
+    },
+  ],
+  "headers": Array [
+    "date_",
+    "activityValue",
+    "activityType",
+  ],
+  "sha256": "25a84665fe28fd62b6261c0fb86c0592043dc4c34270b121212743a59067d7a8",
+}
+`;
+
+exports[`tiktok with tiktok.zip view block outputs match the snapshots: chathistory 1`] = `
+Object {
+  "count": 778,
+  "firstItems": Array [
+    Object {
+      "content": null,
+      "date": "2017-12-28 12:08:15",
+      "sender": "bob.dylan",
+    },
+    Object {
+      "content": null,
+      "date": "2016-05-24 16:37:25",
+      "sender": "john.lennon",
+    },
+    Object {
+      "content": null,
+      "date": "2010-10-14 18:34:15",
+      "sender": "john.lennon",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "sender",
+    "content",
+  ],
+  "sha256": "42619dd927e23873e1d0da25bca2b0f075907b64aa1cec168ab9cf614decc792",
+}
+`;
+
+exports[`tiktok with tiktok.zip view block outputs match the snapshots: followingfollower 1`] = `
+Object {
+  "count": 225,
+  "firstItems": Array [
+    Object {
+      "actionType": "Following",
+      "count_": 1,
+      "date_": "2008-02-02",
+    },
+    Object {
+      "actionType": "Following",
+      "count_": 1,
+      "date_": "2008-02-24",
+    },
+    Object {
+      "actionType": "Following",
+      "count_": 1,
+      "date_": "2008-06-18",
+    },
+  ],
+  "headers": Array [
+    "date_",
+    "actionType",
+    "count_",
+  ],
+  "sha256": "87b0f70e2a72a71c299c479ef912dce2faaa875261147833a4cd695d8e773f03",
+}
+`;
+
+exports[`tiktok with tiktok.zip view block outputs match the snapshots: loginhistory 1`] = `
+Object {
+  "count": 2289,
+  "firstItems": Array [
+    Object {
+      "carrier": "Swisscom",
+      "date": "2014-09-08 11:32:14 UTC",
+      "devicemodel": "iPhone 13",
+      "devicesystem": "Android 15",
+      "ip": "606.74.653.762",
+      "networktype": "Wi-fi",
+    },
+    Object {
+      "carrier": "Salt",
+      "date": "2020-12-12 01:00:20 UTC",
+      "devicemodel": "SAMSUNG_I006D",
+      "devicesystem": "Android 15",
+      "ip": "701.97.300.919",
+      "networktype": "4G",
+    },
+    Object {
+      "carrier": "Salt",
+      "date": "2021-07-10 06:04:52 UTC",
+      "devicemodel": "SAMSUNG_I006D",
+      "devicesystem": "Android 15",
+      "ip": "284.37.824.902",
+      "networktype": "Wi-fi",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "ip",
+    "devicemodel",
+    "devicesystem",
+    "networktype",
+    "carrier",
+  ],
+  "sha256": "46d53f984f4236ce73a9715182620e83c298665a58bd4efdc43f5c57709385b4",
+}
+`;
+
+exports[`tinder with tinder.json view block outputs match the snapshots: app-opens-vue 1`] = `
+Object {
+  "count": 74,
+  "firstItems": Array [
+    Object {
+      "actionType": "app_opens",
+      "amount": 3,
+      "dateValue": "2021-01-01",
+    },
+    Object {
+      "actionType": "app_opens",
+      "amount": 4,
+      "dateValue": "2021-01-02",
+    },
+    Object {
+      "actionType": "app_opens",
+      "amount": 3,
+      "dateValue": "2021-01-04",
+    },
+  ],
+  "headers": Array [
+    "dateValue",
+    "actionType",
+    "amount",
+  ],
+  "sha256": "dd0d5d0acdfcc009df91528eff4de377cebdc3c9bd35d5583b843c08f13629d4",
+}
+`;
+
+exports[`tinder with tinder.json view block outputs match the snapshots: donut 1`] = `
+Object {
+  "count": 74,
+  "firstItems": Array [
+    Object {
+      "dateValue": "2021-01-01",
+      "likes": 12,
+      "number_of_matches": 0,
+      "number_of_messages_received": 0,
+      "number_of_messages_sent": 0,
+      "number_of_superlikes": 1,
+      "opens": 3,
+      "passes": 34,
+    },
+    Object {
+      "dateValue": "2021-01-02",
+      "likes": 15,
+      "number_of_matches": 0,
+      "number_of_messages_received": 0,
+      "number_of_messages_sent": 1,
+      "number_of_superlikes": 3,
+      "opens": 4,
+      "passes": 20,
+    },
+    Object {
+      "dateValue": "2021-01-04",
+      "likes": 4,
+      "number_of_matches": 0,
+      "number_of_messages_received": 0,
+      "number_of_messages_sent": 0,
+      "number_of_superlikes": 0,
+      "opens": 3,
+      "passes": 5,
+    },
+  ],
+  "headers": Array [
+    "dateValue",
+    "likes",
+    "number_of_superlikes",
+    "passes",
+    "number_of_messages_sent",
+    "number_of_messages_received",
+    "number_of_matches",
+    "opens",
+  ],
+  "sha256": "3f0a2d571534b89bb70d5c0062f70ee40b9128805cbbd9345912b83e1f15a999",
+}
+`;
+
+exports[`tinder with tinder.json view block outputs match the snapshots: likes-dislikes-open 1`] = `
+Object {
+  "count": 74,
+  "firstItems": Array [
+    Object {
+      "dateValue": "2021-01-01",
+      "likes": 12,
+      "opens": 3,
+      "passes": 34,
+    },
+    Object {
+      "dateValue": "2021-01-02",
+      "likes": 15,
+      "opens": 4,
+      "passes": 20,
+    },
+    Object {
+      "dateValue": "2021-01-04",
+      "likes": 4,
+      "opens": 3,
+      "passes": 5,
+    },
+  ],
+  "headers": Array [
+    "dateValue",
+    "likes",
+    "passes",
+    "opens",
+  ],
+  "sha256": "a7bd1e6a36fa4e1fda54804f6b39e4bfc4f029b37d000e7d3369ccc4b783e64b",
+}
+`;
+
+exports[`tinder with tinder.json view block outputs match the snapshots: likes-dislikes-vue 1`] = `
+Object {
+  "count": 148,
+  "firstItems": Array [
+    Object {
+      "actionType": "swipes_likes",
+      "amount": 12,
+      "dateValue": "2021-01-01",
+    },
+    Object {
+      "actionType": "swipes_likes",
+      "amount": 15,
+      "dateValue": "2021-01-02",
+    },
+    Object {
+      "actionType": "swipes_likes",
+      "amount": 4,
+      "dateValue": "2021-01-04",
+    },
+  ],
+  "headers": Array [
+    "dateValue",
+    "actionType",
+    "amount",
+  ],
+  "sha256": "226f2826340a4b263d20dfb4f74f1bd0c8d62176fbfbff330ac839a552db071a",
+}
+`;
+
+exports[`tinder with tinder.json view block outputs match the snapshots: messages-activity 1`] = `
+Object {
+  "count": 600,
+  "firstItems": Array [
+    Object {
+      "message": "blablabla",
+      "receiver": "1",
+      "sender": "You",
+      "sentDate": "Fri, 02 July 2021 20:31:15 GMT",
+    },
+    Object {
+      "message": "blablabla",
+      "receiver": "1",
+      "sender": "You",
+      "sentDate": "Wed, 13 October 2021 11:08:13 GMT",
+    },
+    Object {
+      "message": "blablabla",
+      "receiver": "1",
+      "sender": "You",
+      "sentDate": "Wed, 18 March 2020 23:26:10 GMT",
+    },
+  ],
+  "headers": Array [
+    "sender",
+    "receiver",
+    "message",
+    "sentDate",
+  ],
+  "sha256": "5a42b6d2a72e8206ff6c05149bea8855b8db401b0fdefefa9ab5be8405760e67",
+}
+`;
+
+exports[`tinder with tinder.json view block outputs match the snapshots: user 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "ageFilterMax": 40,
+      "ageFilterMin": 30,
+      "birthDate": "1980-01-01T00:00:00.000Z",
+      "college": "[]",
+      "createDate": "2021-01-01T19:14:23.123Z",
+      "descriptors": "[{\\"name\\":\\"Zodiac\\",\\"visibility\\":\\"public\\",\\"choices\\":[\\"test1\\"]},{\\"name\\":\\"Capricorne…",
+      "education": "Has no high school or college education",
+      "gender": "M",
+      "genderFilter": "F",
+      "interestedIn": "F",
+      "sexualOrientations": "[\\"test\\",\\"test2ddddd\\"]",
+    },
+  ],
+  "headers": Array [
+    "ageFilterMax",
+    "ageFilterMin",
+    "birthDate",
+    "createDate",
+    "gender",
+    "genderFilter",
+    "interestedIn",
+    "education",
+    "college",
+    "sexualOrientations",
+    "descriptors",
+  ],
+  "sha256": "9cb2c216497ebcdecaa8756f4a05ed476f29141b79d8541ab0151a93c448825b",
+}
+`;
+
+exports[`tracker-control with tracker-control.csv view block outputs match the snapshots: trackerControl 1`] = `
+Object {
+  "count": 426,
+  "firstItems": Array [
+    Object {
+      "app": "",
+      "category": "Advertising",
+      "daddr": "aax.amazon-adsystem.com",
+      "package": "",
+      "time": "1683547956797",
+      "tracker": "Amazon.com",
+      "uid": "0",
+      "uncertain": "0",
+    },
+    Object {
+      "app": "",
+      "category": "Content",
+      "daddr": "accounts.google.com",
+      "package": "",
+      "time": "1683196064269",
+      "tracker": "Google",
+      "uid": "0",
+      "uncertain": "0",
+    },
+    Object {
+      "app": "",
+      "category": "Uncategorised",
+      "daddr": "acdn.adnxs-simple.com",
+      "package": "",
+      "time": "1683532375461",
+      "tracker": "acdn.adnxs-simple.com",
+      "uid": "0",
+      "uncertain": "2",
+    },
+  ],
+  "headers": Array [
+    "uid",
+    "daddr",
+    "time",
+    "uncertain",
+    "tracker",
+    "category",
+    "package",
+    "app",
+  ],
+  "sha256": "e3bcf81044c9159e43df657ff536d6dcb71c11568e8680d1ba94686aa84e2344",
+}
+`;
+
+exports[`tracker-control-agg with generated participant data view block outputs match the snapshots: trackerControl 1`] = `
+Object {
+  "count": 852,
+  "firstItems": Array [
+    Object {
+      "app": "",
+      "category": "Advertising",
+      "daddr": "aax.amazon-adsystem.com",
+      "filePath": "tracker-control_participant1.zip/block00.json",
+      "package": "",
+      "time": "1683547956797",
+      "tracker": "Amazon.com",
+      "uid": "0",
+    },
+    Object {
+      "app": "",
+      "category": "Content",
+      "daddr": "accounts.google.com",
+      "filePath": "tracker-control_participant1.zip/block00.json",
+      "package": "",
+      "time": "1683196064269",
+      "tracker": "Google",
+      "uid": "0",
+    },
+    Object {
+      "app": "",
+      "category": "Uncategorised",
+      "daddr": "acdn.adnxs-simple.com",
+      "filePath": "tracker-control_participant1.zip/block00.json",
+      "package": "",
+      "time": "1683532375461",
+      "tracker": "acdn.adnxs-simple.com",
+      "uid": "0",
+    },
+  ],
+  "headers": Array [
+    "uid",
+    "daddr",
+    "time",
+    "tracker",
+    "category",
+    "package",
+    "app",
+    "filePath",
+  ],
+  "sha256": "380ced34ceb984ed2e76bebd151f2d446e2b0ddbefa4cb18798d638a79b2dd8b",
+}
+`;
+
+exports[`tracker-control-agg with generated participant data view block outputs match the snapshots: trackerControlGraph 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "jsonData": Object {
+        "links": Array [
+          Object {
+            "id": "TikTok>AppsFlyer",
+            "source": "TikTok",
+            "target": "AppsFlyer",
+            "weight": 2,
+          },
+          Object {
+            "id": "TikTok>DoubleVerify",
+            "source": "TikTok",
+            "target": "DoubleVerify",
+            "weight": 10,
+          },
+          Object {
+            "id": "myHelsana>Adjust",
+            "source": "myHelsana",
+            "target": "Adjust",
+            "weight": 2,
+          },
+          Object {
+            "id": "Mobile CFF>Google",
+            "source": "Mobile CFF",
+            "target": "Google",
+            "weight": 16,
+          },
+          Object {
+            "id": "20 minutes>Google",
+            "source": "20 minutes",
+            "target": "Google",
+            "weight": 42,
+          },
+        ],
+        "nodes": Array [
+          Object {
+            "color": "#EBEBF6",
+            "id": "TikTok",
+            "size": 9,
+          },
+          Object {
+            "color": "#ACA9D8",
+            "id": "AppsFlyer",
+            "size": 11,
+          },
+          Object {
+            "color": "#655FB5",
+            "id": "DoubleVerify",
+            "size": 19,
+          },
+          Object {
+            "color": "#EBEBF6",
+            "id": "myHelsana",
+            "size": 9,
+          },
+          Object {
+            "color": "#ACA9D8",
+            "id": "Adjust",
+            "size": 11,
+          },
+        ],
+      },
+    },
+  ],
+  "headers": Array [
+    "jsonData",
+  ],
+  "sha256": "b910deedf9e60d3bcf3f8de1fbe08c87c6bfedd1d360bf1f0b1140504b7c9d59",
+}
+`;
+
+exports[`tracker-control-agg with generated participant data view block outputs match the snapshots: trackerControlGraphAll 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "jsonData": Object {
+        "links": Array [
+          Object {
+            "id": "YouTube>Google",
+            "source": "YouTube",
+            "target": "Google",
+            "weight": 8,
+          },
+          Object {
+            "id": "Signal>Google",
+            "source": "Signal",
+            "target": "Google",
+            "weight": 2,
+          },
+          Object {
+            "id": "TikTok>ByteDance",
+            "source": "TikTok",
+            "target": "ByteDance",
+            "weight": 116,
+          },
+          Object {
+            "id": "TikTok>Google",
+            "source": "TikTok",
+            "target": "Google",
+            "weight": 6,
+          },
+          Object {
+            "id": "TikTok>AppsFlyer",
+            "source": "TikTok",
+            "target": "AppsFlyer",
+            "weight": 2,
+          },
+        ],
+        "nodes": Array [
+          Object {
+            "color": "#EBEBF6",
+            "id": "YouTube",
+            "size": 9,
+          },
+          Object {
+            "color": "#655FB5",
+            "id": "Google",
+            "size": 191,
+          },
+          Object {
+            "color": "#EBEBF6",
+            "id": "Signal",
+            "size": 9,
+          },
+          Object {
+            "color": "#EBEBF6",
+            "id": "TikTok",
+            "size": 9,
+          },
+          Object {
+            "color": "#655FB5",
+            "id": "ByteDance",
+            "size": 125,
+          },
+        ],
+      },
+    },
+  ],
+  "headers": Array [
+    "jsonData",
+  ],
+  "sha256": "0904651a16aeb227cdaf7210e10efea3815bebdd14c9f32ed980fe7ee1496fd9",
+}
+`;
+
+exports[`tracker-control-agg with generated participant data view block outputs match the snapshots: trackerControlGraphAllCategories 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "jsonData": Object {
+        "links": Array [
+          Object {
+            "id": "Signal>Google",
+            "source": "Signal",
+            "target": "Google",
+            "weight": 2,
+          },
+          Object {
+            "id": "TikTok>ByteDance",
+            "source": "TikTok",
+            "target": "ByteDance",
+            "weight": 116,
+          },
+          Object {
+            "id": "TikTok>Google",
+            "source": "TikTok",
+            "target": "Google",
+            "weight": 6,
+          },
+          Object {
+            "id": "TikTok>AppsFlyer",
+            "source": "TikTok",
+            "target": "AppsFlyer",
+            "weight": 2,
+          },
+          Object {
+            "id": "TikTok>DoubleVerify",
+            "source": "TikTok",
+            "target": "DoubleVerify",
+            "weight": 10,
+          },
+        ],
+        "nodes": Array [
+          Object {
+            "color": "#655FB5",
+            "id": "Google",
+            "size": 191,
+          },
+          Object {
+            "color": "#EBEBF6",
+            "id": "Signal",
+            "size": 9,
+          },
+          Object {
+            "color": "#EBEBF6",
+            "id": "TikTok",
+            "size": 9,
+          },
+          Object {
+            "color": "#655FB5",
+            "id": "ByteDance",
+            "size": 125,
+          },
+          Object {
+            "color": "#ACA9D8",
+            "id": "AppsFlyer",
+            "size": 11,
+          },
+        ],
+      },
+    },
+  ],
+  "headers": Array [
+    "jsonData",
+  ],
+  "sha256": "c72300679b3a25d13c9fa0463b4514867591855a54cb6e9f1ebf4d38498c549e",
+}
+`;
+
+exports[`tracker-control-agg with generated participant data view block outputs match the snapshots: trackerControlGraphAllInclusion 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "jsonData": Object {
+        "links": Array [
+          Object {
+            "id": "TikTok>AppsFlyer",
+            "source": "TikTok",
+            "target": "AppsFlyer",
+            "weight": 2,
+          },
+          Object {
+            "id": "TikTok>DoubleVerify",
+            "source": "TikTok",
+            "target": "DoubleVerify",
+            "weight": 10,
+          },
+          Object {
+            "id": "myHelsana>Adjust",
+            "source": "myHelsana",
+            "target": "Adjust",
+            "weight": 2,
+          },
+          Object {
+            "id": "Mobile CFF>Google",
+            "source": "Mobile CFF",
+            "target": "Google",
+            "weight": 16,
+          },
+          Object {
+            "id": "20 minutes>Google",
+            "source": "20 minutes",
+            "target": "Google",
+            "weight": 42,
+          },
+        ],
+        "nodes": Array [
+          Object {
+            "color": "#EBEBF6",
+            "id": "TikTok",
+            "size": 9,
+          },
+          Object {
+            "color": "#ACA9D8",
+            "id": "AppsFlyer",
+            "size": 11,
+          },
+          Object {
+            "color": "#655FB5",
+            "id": "DoubleVerify",
+            "size": 19,
+          },
+          Object {
+            "color": "#EBEBF6",
+            "id": "myHelsana",
+            "size": 9,
+          },
+          Object {
+            "color": "#ACA9D8",
+            "id": "Adjust",
+            "size": 11,
+          },
+        ],
+      },
+    },
+  ],
+  "headers": Array [
+    "jsonData",
+  ],
+  "sha256": "27dbd980fe46bbe6a8b85381a111af42bd424d7f95efcb0c595d50b9d0ace53d",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: ads-per-advertiser 1`] = `
+Object {
+  "count": 710,
+  "firstItems": Array [
+    Object {
+      "advertiserName": "#VivaTech",
+      "count_": 41,
+      "date_": "2021-06-05",
+    },
+    Object {
+      "advertiserName": ".swiss | get the origin-approving internet address",
+      "count_": 10,
+      "date_": "2021-06-26",
+    },
+    Object {
+      "advertiserName": "0x资讯",
+      "count_": 1,
+      "date_": "2021-04-22",
+    },
+  ],
+  "headers": Array [
+    "advertiserName",
+    "date_",
+    "count_",
+  ],
+  "sha256": "dee9b4c556ce9fdeb3d4e2444c03b0b7316fac06d2791edb4c234e9d529a9950",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: all-criteria-all-advertisers 1`] = `
+Object {
+  "count": 9715,
+  "firstItems": Array [
+    Object {
+      "group": "#VivaTech",
+      "id": 3,
+      "name": "25 to 49",
+      "parent": 2,
+      "size": 41,
+      "value": 41,
+    },
+    Object {
+      "group": "#VivaTech",
+      "id": 2,
+      "name": "Age",
+      "parent": 1,
+      "size": null,
+      "value": 41,
+    },
+    Object {
+      "group": "#VivaTech",
+      "id": 5,
+      "name": "@500Startups",
+      "parent": 4,
+      "size": 9,
+      "value": 9,
+    },
+  ],
+  "headers": Array [
+    "id",
+    "name",
+    "value",
+    "group",
+    "parent",
+    "size",
+  ],
+  "sha256": "50187cecdcfb25bbcb852b17cfb1fa9343edc5f43504a72d984b4631eebecaee",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: genericDateViewer 1`] = `
+Object {
+  "count": 19701,
+  "firstItems": Array [
+    Object {
+      "date": Object {},
+      "description": "Ad > Ads User Data > Ad Engagements > Engagements > Impression Attributes > [Dis…",
+      "filename": "data/ad-engagements.js",
+    },
+    Object {
+      "date": Object {},
+      "description": "Ad > Ads User Data > Ad Engagements > Engagements > Engagement Attributes > [Eng…",
+      "filename": "data/ad-engagements.js",
+    },
+    Object {
+      "date": Object {},
+      "description": "Ad > Ads User Data > Ad Engagements > Engagements > Impression Attributes > [Dis…",
+      "filename": "data/ad-engagements.js",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "description",
+    "filename",
+  ],
+  "sha256": "a5ff9c85db4db8a09a6ce4da001e741c39f4a09f14156a4321c4cffe20c921d0",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: overview 1`] = `
+Object {
+  "count": 58595,
+  "firstItems": Array [
+    Object {
+      "companyName": "Illumeably",
+      "date_": "2021-04-15 19:51:50",
+      "engagedWith": "No",
+      "engagements": 0,
+      "targetingType": "Platforms",
+      "targetingValue": "Desktop",
+      "tweetId": "1369584490276741122",
+    },
+    Object {
+      "companyName": "Illumeably",
+      "date_": "2021-04-15 19:51:50",
+      "engagedWith": "No",
+      "engagements": 0,
+      "targetingType": "Locations",
+      "targetingValue": "Switzerland",
+      "tweetId": "1369584490276741122",
+    },
+    Object {
+      "companyName": "Illumeably",
+      "date_": "2021-04-15 19:51:50",
+      "engagedWith": "No",
+      "engagements": 0,
+      "targetingType": "Languages",
+      "targetingValue": "English",
+      "tweetId": "1369584490276741122",
+    },
+  ],
+  "headers": Array [
+    "engagedWith",
+    "tweetId",
+    "companyName",
+    "engagements",
+    "date_",
+    "targetingType",
+    "targetingValue",
+  ],
+  "sha256": "9732b211094a215573855b41e676ba1b34fb40d220a121a18b513ed63dec16bc",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: overview-last-month 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: personalization 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "advertisers": "[\\"@0x7f0000011\\",\\"@1800Tequila\\",\\"@46MileAgency\\",\\"@4Cinsights\\",\\"@911LoneStar\\",\\"@91…",
+      "age": "[\\"13-54\\"]",
+      "gender": "male",
+      "interests": "[{\\"name\\":\\"#SundayMorning\\",\\"isDisabled\\":false},{\\"name\\":\\"(Editorial) People are st…",
+      "languages": "[{\\"language\\":\\"English\\",\\"isDisabled\\":false},{\\"language\\":\\"French\\",\\"isDisabled\\":fal…",
+      "locationHistory": "[\\"Switzerland\\",\\"Geneva, Switzerland\\",\\"Gex, Suisse\\"]",
+      "lookalikeAdvertisers": "[\\"@8ballpool\\",\\"@ARTEfr\\",\\"@AdobeDocCloud\\",\\"@AdobeExpCloudDE\\",\\"@AmpushNYC\\",\\"@Badoo…",
+      "numAudiences": 1137,
+      "partnerInterests": "[]",
+      "shows": "[\\"2017 French Open Tennis\\",\\"60 Minutes\\",\\"Alice Nevers : le juge est une femme\\",\\"…",
+    },
+  ],
+  "headers": Array [
+    "languages",
+    "gender",
+    "interests",
+    "partnerInterests",
+    "numAudiences",
+    "advertisers",
+    "lookalikeAdvertisers",
+    "shows",
+    "locationHistory",
+    "age",
+  ],
+  "sha256": "7dc5f652e53fb503bcd7c3759455ae257aec1e3b5af5c105c5796181c6dadfe4",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: targeting-criteria-all-advertisers 1`] = `
+Object {
+  "count": 2323,
+  "firstItems": Array [
+    Object {
+      "count_": 82,
+      "targetingType": "Age",
+      "targetingValue": "13 and up",
+    },
+    Object {
+      "count_": 90,
+      "targetingType": "Age",
+      "targetingValue": "13 to 34",
+    },
+    Object {
+      "count_": 26,
+      "targetingType": "Age",
+      "targetingValue": "13 to 49",
+    },
+  ],
+  "headers": Array [
+    "targetingType",
+    "targetingValue",
+    "count_",
+  ],
+  "sha256": "edff6c475bab2e5220781785907eaaef35cc9f804063ee897bb0176dfec2aa73",
+}
+`;
+
+exports[`twitter with twitter-large.zip view block outputs match the snapshots: targeting-criteria-by-advertiser 1`] = `
+Object {
+  "count": 778,
+  "firstItems": Array [
+    Object {
+      "group": "Apple",
+      "id": 3,
+      "name": "13 and up",
+      "parent": 2,
+      "size": 49,
+      "value": 49,
+    },
+    Object {
+      "group": "Apple",
+      "id": 4,
+      "name": "18 and up",
+      "parent": 2,
+      "size": 429,
+      "value": 429,
+    },
+    Object {
+      "group": "Apple",
+      "id": 2,
+      "name": "Age",
+      "parent": 1,
+      "size": null,
+      "value": 478,
+    },
+  ],
+  "headers": Array [
+    "id",
+    "name",
+    "value",
+    "group",
+    "parent",
+    "size",
+  ],
+  "sha256": "6156a00b41fd810c7014b41903330ce13cadcf2b9b3d7615b4cdfef1edcc40c8",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: ads-per-advertiser 1`] = `
+Object {
+  "count": 225,
+  "firstItems": Array [
+    Object {
+      "advertiserName": "#VivaTech",
+      "count_": 21,
+      "date_": "2021-06-05",
+    },
+    Object {
+      "advertiserName": "636",
+      "count_": 1,
+      "date_": "2021-06-10",
+    },
+    Object {
+      "advertiserName": "AERQ",
+      "count_": 1,
+      "date_": "2021-06-08",
+    },
+  ],
+  "headers": Array [
+    "advertiserName",
+    "date_",
+    "count_",
+  ],
+  "sha256": "f52e19fd0f5490cf8a7563401199a209c15883685cbad229606f511b98b09c61",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: all-criteria-all-advertisers 1`] = `
+Object {
+  "count": 2932,
+  "firstItems": Array [
+    Object {
+      "group": "#VivaTech",
+      "id": 3,
+      "name": "25 to 49",
+      "parent": 2,
+      "size": 21,
+      "value": 21,
+    },
+    Object {
+      "group": "#VivaTech",
+      "id": 2,
+      "name": "Age",
+      "parent": 1,
+      "size": null,
+      "value": 21,
+    },
+    Object {
+      "group": "#VivaTech",
+      "id": 5,
+      "name": "@500Startups",
+      "parent": 4,
+      "size": 5,
+      "value": 5,
+    },
+  ],
+  "headers": Array [
+    "id",
+    "name",
+    "value",
+    "group",
+    "parent",
+    "size",
+  ],
+  "sha256": "6dbc10589483b08684de3fa9115151d9dd65d17a46ac706acbe50a37f7ae7d6d",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: genericDateViewer 1`] = `
+Object {
+  "count": 2350,
+  "firstItems": Array [
+    Object {
+      "date": Object {},
+      "description": "Ad > Ads User Data > Ad Impressions > Impressions > [Display Location : Timeline…",
+      "filename": "data/ad-impressions.js",
+    },
+    Object {
+      "date": Object {},
+      "description": "Ad > Ads User Data > Ad Impressions > Impressions > [Display Location : Timeline…",
+      "filename": "data/ad-impressions.js",
+    },
+    Object {
+      "date": Object {},
+      "description": "Ad > Ads User Data > Ad Impressions > Impressions > [Display Location : Timeline…",
+      "filename": "data/ad-impressions.js",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "description",
+    "filename",
+  ],
+  "sha256": "eaf670db188eaeebf26475e6dc2fbd9bc6af33a0be549cc939a9035327356dca",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: overview 1`] = `
+Object {
+  "count": 6762,
+  "firstItems": Array [
+    Object {
+      "companyName": "Illumeably",
+      "date_": "2021-04-15 19:51:50",
+      "engagedWith": "No",
+      "engagements": 0,
+      "targetingType": "Platforms",
+      "targetingValue": "Desktop",
+      "tweetId": "1369584490276741122",
+    },
+    Object {
+      "companyName": "Illumeably",
+      "date_": "2021-04-15 19:51:50",
+      "engagedWith": "No",
+      "engagements": 0,
+      "targetingType": "Locations",
+      "targetingValue": "Switzerland",
+      "tweetId": "1369584490276741122",
+    },
+    Object {
+      "companyName": "Illumeably",
+      "date_": "2021-04-15 19:51:50",
+      "engagedWith": "No",
+      "engagements": 0,
+      "targetingType": "Languages",
+      "targetingValue": "English",
+      "tweetId": "1369584490276741122",
+    },
+  ],
+  "headers": Array [
+    "engagedWith",
+    "tweetId",
+    "companyName",
+    "engagements",
+    "date_",
+    "targetingType",
+    "targetingValue",
+  ],
+  "sha256": "a4837e8b77f720624b592fe0711f02e2506c9ef856ecd5dfd482f8f5744196ca",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: overview-last-month 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: personalization 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "advertisers": "[\\"@0x7f0000011\\",\\"@1800Tequila\\",\\"@46MileAgency\\",\\"@4Cinsights\\",\\"@911LoneStar\\",\\"@91…",
+      "age": "[\\"13-54\\"]",
+      "gender": "male",
+      "interests": "[{\\"name\\":\\"#SundayMorning\\",\\"isDisabled\\":false},{\\"name\\":\\"(Editorial) People are st…",
+      "languages": "[{\\"language\\":\\"English\\",\\"isDisabled\\":false},{\\"language\\":\\"French\\",\\"isDisabled\\":fal…",
+      "locationHistory": "[\\"Switzerland\\",\\"Geneva, Switzerland\\",\\"Gex, Suisse\\"]",
+      "lookalikeAdvertisers": "[\\"@8ballpool\\",\\"@ARTEfr\\",\\"@AdobeDocCloud\\",\\"@AdobeExpCloudDE\\",\\"@AmpushNYC\\",\\"@Badoo…",
+      "numAudiences": 1137,
+      "partnerInterests": "[]",
+      "shows": "[\\"2017 French Open Tennis\\",\\"60 Minutes\\",\\"Alice Nevers : le juge est une femme\\",\\"…",
+    },
+  ],
+  "headers": Array [
+    "languages",
+    "gender",
+    "interests",
+    "partnerInterests",
+    "numAudiences",
+    "advertisers",
+    "lookalikeAdvertisers",
+    "shows",
+    "locationHistory",
+    "age",
+  ],
+  "sha256": "7dc5f652e53fb503bcd7c3759455ae257aec1e3b5af5c105c5796181c6dadfe4",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: targeting-criteria-all-advertisers 1`] = `
+Object {
+  "count": 814,
+  "firstItems": Array [
+    Object {
+      "count_": 10,
+      "targetingType": "Age",
+      "targetingValue": "13 and up",
+    },
+    Object {
+      "count_": 4,
+      "targetingType": "Age",
+      "targetingValue": "13 to 34",
+    },
+    Object {
+      "count_": 2,
+      "targetingType": "Age",
+      "targetingValue": "13 to 49",
+    },
+  ],
+  "headers": Array [
+    "targetingType",
+    "targetingValue",
+    "count_",
+  ],
+  "sha256": "c6195925870d68683a1b1f9518e2601f0e8a86264f8cc96618e974e6819fa27f",
+}
+`;
+
+exports[`twitter with twitter-small.zip view block outputs match the snapshots: targeting-criteria-by-advertiser 1`] = `
+Object {
+  "count": 372,
+  "firstItems": Array [
+    Object {
+      "group": "#VivaTech",
+      "id": 3,
+      "name": "25 to 49",
+      "parent": 2,
+      "size": 21,
+      "value": 21,
+    },
+    Object {
+      "group": "#VivaTech",
+      "id": 2,
+      "name": "Age",
+      "parent": 1,
+      "size": null,
+      "value": 21,
+    },
+    Object {
+      "group": "#VivaTech",
+      "id": 5,
+      "name": "@500Startups",
+      "parent": 4,
+      "size": 5,
+      "value": 5,
+    },
+  ],
+  "headers": Array [
+    "id",
+    "name",
+    "value",
+    "group",
+    "parent",
+    "size",
+  ],
+  "sha256": "337348839b0eccd13a31b337963b1c1aa15c8b728732622b97267f933c6c53f2",
+}
+`;
+
+exports[`twitter-agg with generated participant data view block outputs match the snapshots: overview 1`] = `
+Object {
+  "count": 13524,
+  "firstItems": Array [
+    Object {
+      "companyName": "Illumeably",
+      "criteriaCount": null,
+      "engagedWith": "No",
+      "filePath": "twitter_participant1.zip/block00.json",
+      "impressionDate": "2021-04-15 19:51:50",
+      "tweetId": "1369584490276741122",
+      "url": null,
+    },
+    Object {
+      "companyName": "Illumeably",
+      "criteriaCount": null,
+      "engagedWith": "No",
+      "filePath": "twitter_participant1.zip/block00.json",
+      "impressionDate": "2021-04-15 19:51:50",
+      "tweetId": "1369584490276741122",
+      "url": null,
+    },
+    Object {
+      "companyName": "Illumeably",
+      "criteriaCount": null,
+      "engagedWith": "No",
+      "filePath": "twitter_participant1.zip/block00.json",
+      "impressionDate": "2021-04-15 19:51:50",
+      "tweetId": "1369584490276741122",
+      "url": null,
+    },
+  ],
+  "headers": Array [
+    "tweetId",
+    "companyName",
+    "impressionDate",
+    "url",
+    "engagedWith",
+    "criteriaCount",
+    "filePath",
+  ],
+  "sha256": "e1e818ab455d6e0361dc8c4e72f496b00c722317754cb7842347cb0062451994",
+}
+`;
+
+exports[`twitter-agg with generated participant data view block outputs match the snapshots: overview-last-month 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`twitter-agg with generated participant data view block outputs match the snapshots: targeting 1`] = `
+Object {
+  "count": 3658,
+  "firstItems": Array [
+    Object {
+      "advertiserName": "#VivaTech",
+      "criteriaCount": "21",
+      "filePath": "twitter_participant1.zip/block05.json",
+      "targetingType": "Age",
+      "targetingValue": "25 to 49",
+    },
+    Object {
+      "advertiserName": "#VivaTech",
+      "criteriaCount": "5",
+      "filePath": "twitter_participant1.zip/block05.json",
+      "targetingType": "Follower look-alikes",
+      "targetingValue": "@500Startups",
+    },
+    Object {
+      "advertiserName": "#VivaTech",
+      "criteriaCount": "10",
+      "filePath": "twitter_participant1.zip/block05.json",
+      "targetingType": "Follower look-alikes",
+      "targetingValue": "@BW",
+    },
+  ],
+  "headers": Array [
+    "advertiserName",
+    "targetingType",
+    "targetingValue",
+    "criteriaCount",
+    "filePath",
+  ],
+  "sha256": "f751ef39e280322484c897d9ae5e575c6e6b047847125a612dced7f9e38870cc",
+}
+`;
+
+exports[`uber with uber.zip view block outputs match the snapshots: genericDateViewer 1`] = `
+Object {
+  "count": 113,
+  "firstItems": Array [
+    Object {
+      "date": Object {},
+      "description": "Request Time : [City : 3, Product Type : uberX, Trip Or Order Status : COMPLETED…",
+      "filename": "Uber Data/Rider/trips_data.csv",
+    },
+    Object {
+      "date": Object {},
+      "description": "Begin Trip Time : [City : 3, Product Type : uberX, Trip Or Order Status : COMPLE…",
+      "filename": "Uber Data/Rider/trips_data.csv",
+    },
+    Object {
+      "date": Object {},
+      "description": "Dropoff Time : [City : 3, Product Type : uberX, Trip Or Order Status : COMPLETED…",
+      "filename": "Uber Data/Rider/trips_data.csv",
+    },
+  ],
+  "headers": Array [
+    "date",
+    "description",
+    "filename",
+  ],
+  "sha256": "de433edbec1b2951e833ea4508d503648d5ce92b3f2f23a9b13e172cadea3b44",
+}
+`;
+
+exports[`uber with uber.zip view block outputs match the snapshots: genericLocationViewer 1`] = `
+Object {
+  "count": 40,
+  "firstItems": Array [
+    Object {
+      "description": Object {
+        "beginTripAddress": "67 Rue de Fleury, 92140 Clamart, France",
+        "beginTripLat": "48.8127132",
+        "beginTripLng": "2.2632769",
+        "beginTripTime": "2018-04-05 06:06:05 +0000 UTC",
+        "city": "3",
+        "distanceMiles": "6.1722169043",
+        "dropoffAddress": "1 Bd Lannes, 75016 Paris, France",
+        "dropoffTime": "2018-04-05 06:38:41 +0000 UTC",
+        "fareAmount": "32.82",
+        "fareCurrency": "EUR",
+        "productType": "uberX",
+        "requestTime": "2018-04-05 05:52:02 +0000 UTC",
+        "tripOrOrderStatus": "COMPLETED",
+      },
+      "filename": "Uber Data/Rider/trips_data.csv",
+      "latitude": 48.8704654,
+      "longitude": 2.2745517,
+      "path": "",
+    },
+    Object {
+      "description": Object {
+        "beginTripAddress": "12 Rue de l'Épargne, 69008 Lyon, France",
+        "beginTripLat": "45.7414398109966",
+        "beginTripLng": "4.86037932336783",
+        "beginTripTime": "2017-10-28 23:57:40 +0000 UTC",
+        "city": "51",
+        "distanceMiles": "3.2594978383",
+        "dropoffAddress": "4 Rue Hrant Dink, 69002 Lyon, France",
+        "dropoffTime": "2017-10-29 00:09:21 +0000 UTC",
+        "fareAmount": "10.99",
+        "fareCurrency": "EUR",
+        "productType": "uberX",
+        "requestTime": "2017-10-28 23:52:59 +0000 UTC",
+        "tripOrOrderStatus": "COMPLETED",
+      },
+      "filename": "Uber Data/Rider/trips_data.csv",
+      "latitude": 45.7395216074594,
+      "longitude": 4.81518729096804,
+      "path": "",
+    },
+    Object {
+      "description": Object {
+        "beginTripAddress": "2 quai Victor Augagneur, Lyon, 69003, FR",
+        "beginTripLat": "45.763191139567",
+        "beginTripLng": "4.84137670283148",
+        "beginTripTime": "2016-12-05 06:37:40 +0000 UTC",
+        "city": "51",
+        "distanceMiles": "6.8260794183",
+        "dropoffAddress": "28bis Rue Benoît Bennier, Auvergne-Rhône-Alpes, 69260, FR",
+        "dropoffTime": "2016-12-05 07:00:59 +0000 UTC",
+        "fareAmount": "20.01",
+        "fareCurrency": "EUR",
+        "productType": "uberX",
+        "requestTime": "2016-12-05 06:31:20 +0000 UTC",
+        "tripOrOrderStatus": "COMPLETED",
+      },
+      "filename": "Uber Data/Rider/trips_data.csv",
+      "latitude": 45.7763015480284,
+      "longitude": 4.74913662891187,
+      "path": "",
+    },
+  ],
+  "headers": Array [
+    "filename",
+    "latitude",
+    "longitude",
+    "path",
+    "description",
+  ],
+  "sha256": "98499482051e95b5b37c2d00dd7a241510ce6c537a153216ff5ca435b3af140b",
+}
+`;
+
+exports[`uber with uber.zip view block outputs match the snapshots: tripsData 1`] = `
+Object {
+  "count": 40,
+  "firstItems": Array [
+    Object {
+      "beginTripAddress": "67 Rue de Fleury, 92140 Clamart, France",
+      "beginTripLat": "48.8127132",
+      "beginTripLng": "2.2632769",
+      "beginTripTime": "2018-04-05 06:06:05 +0000 UTC",
+      "city": "3",
+      "distanceMiles": "6.1722169043",
+      "dropoffAddress": "1 Bd Lannes, 75016 Paris, France",
+      "dropoffLat": "48.8704654",
+      "dropoffLng": "2.2745517",
+      "dropoffTime": "2018-04-05 06:38:41 +0000 UTC",
+      "fareAmount": "32.82",
+      "fareCurrency": "EUR",
+      "productType": "uberX",
+      "requestTime": "2018-04-05 05:52:02 +0000 UTC",
+      "tripOrOrderStatus": "COMPLETED",
+    },
+    Object {
+      "beginTripAddress": "12 Rue de l'Épargne, 69008 Lyon, France",
+      "beginTripLat": "45.7414398109966",
+      "beginTripLng": "4.86037932336783",
+      "beginTripTime": "2017-10-28 23:57:40 +0000 UTC",
+      "city": "51",
+      "distanceMiles": "3.2594978383",
+      "dropoffAddress": "4 Rue Hrant Dink, 69002 Lyon, France",
+      "dropoffLat": "45.7395216074594",
+      "dropoffLng": "4.81518729096804",
+      "dropoffTime": "2017-10-29 00:09:21 +0000 UTC",
+      "fareAmount": "10.99",
+      "fareCurrency": "EUR",
+      "productType": "uberX",
+      "requestTime": "2017-10-28 23:52:59 +0000 UTC",
+      "tripOrOrderStatus": "COMPLETED",
+    },
+    Object {
+      "beginTripAddress": "2 quai Victor Augagneur, Lyon, 69003, FR",
+      "beginTripLat": "45.763191139567",
+      "beginTripLng": "4.84137670283148",
+      "beginTripTime": "2016-12-05 06:37:40 +0000 UTC",
+      "city": "51",
+      "distanceMiles": "6.8260794183",
+      "dropoffAddress": "28bis Rue Benoît Bennier, Auvergne-Rhône-Alpes, 69260, FR",
+      "dropoffLat": "45.7763015480284",
+      "dropoffLng": "4.74913662891187",
+      "dropoffTime": "2016-12-05 07:00:59 +0000 UTC",
+      "fareAmount": "20.01",
+      "fareCurrency": "EUR",
+      "productType": "uberX",
+      "requestTime": "2016-12-05 06:31:20 +0000 UTC",
+      "tripOrOrderStatus": "COMPLETED",
+    },
+  ],
+  "headers": Array [
+    "city",
+    "productType",
+    "tripOrOrderStatus",
+    "requestTime",
+    "beginTripTime",
+    "beginTripLat",
+    "beginTripLng",
+    "beginTripAddress",
+    "dropoffTime",
+    "dropoffLat",
+    "dropoffLng",
+    "dropoffAddress",
+    "distanceMiles",
+    "fareAmount",
+    "fareCurrency",
+  ],
+  "sha256": "11799e44805eacb6039ea3dee0c55b8b5ec2ed651c46401e3e67a19a0893ee18",
+}
+`;
+
+exports[`uber with uber.zip view block outputs match the snapshots: tripsGraphData 1`] = `
+Object {
+  "count": 36,
+  "firstItems": Array [
+    Object {
+      "source": " Rue de Fleury,  Clamart, France",
+      "target": " Bd Lannes,  Paris, France",
+      "value": 1,
+    },
+    Object {
+      "source": " Rue de l'Épargne,  Lyon, France",
+      "target": " Rue Hrant Dink,  Lyon, France",
+      "value": 1,
+    },
+    Object {
+      "source": " quai Victor Augagneur, Lyon, , FR",
+      "target": "bis Rue Benoît Bennier, Auvergne-Rhône-Alpes, , FR",
+      "value": 1,
+    },
+  ],
+  "headers": Array [
+    "source",
+    "target",
+    "value",
+  ],
+  "sha256": "be01ace913af0ecdcdaf0c0fecae69c17dee58b690a7089e7a5fe1e4f81ee4bf",
+}
+`;
+
+exports[`uber with uber.zip view block outputs match the snapshots: tripsKeplerData 1`] = `
+Object {
+  "sha256": "5beada44e9722f1e2db1efe35b0e4a5f61a41cc6de7d916e1a093d8f3cad4172",
+  "value": Object {
+    "config": Object {
+      "config": Object {
+        "mapState": Object {
+          "bearing": 24,
+          "dragRotate": true,
+          "isSplit": false,
+          "latitude": 46.53882497742701,
+          "longitude": 6.706902419371991,
+          "pitch": 50,
+          "zoom": 8.923280378006325,
+        },
+        "mapStyle": Object {
+          "mapStyles": Object {},
+          "styleType": "dark",
+          "threeDBuildingColor": Array [
+            9.665468314072013,
+            17.18305478057247,
+            31.1442867897876,
+          ],
+          "topLayerGroups": Object {},
+          "visibleLayerGroups": Object {
+            "3d building": false,
+            "border": false,
+            "building": true,
+            "label": true,
+            "land": true,
+            "road": true,
+            "water": true,
+          },
+        },
+        "visState": Object {
+          "animationConfig": Object {
+            "currentTime": null,
+            "speed": 1,
+          },
+          "filters": Array [
+            Object {
+              "animationWindow": "free",
+              "dataId": Array [
+                "40eogm50r",
+              ],
+              "enlarged": false,
+              "id": "w6kkdu02c",
+              "name": Array [
+                "Product Type",
+              ],
+              "plotType": "histogram",
+              "speed": 1,
+              "type": "multiSelect",
+              "value": Array [
+                "POOL",
+                "Green",
+                "POOL: MATCHED",
+                "Pool",
+                "Pool: MATCHED",
+              ],
+              "yAxis": null,
+            },
+            Object {
+              "animationWindow": "free",
+              "dataId": Array [
+                "40eogm50r",
+              ],
+              "enlarged": false,
+              "id": "n55wj9spvu",
+              "name": Array [
+                "Trip or Order Status",
+              ],
+              "plotType": "histogram",
+              "speed": 1,
+              "type": "multiSelect",
+              "value": Array [
+                "COMPLETED",
+              ],
+              "yAxis": null,
+            },
+          ],
+          "interactionConfig": Object {
+            "brush": Object {
+              "enabled": false,
+              "size": 5.1,
+            },
+            "coordinate": Object {
+              "enabled": false,
+            },
+            "geocoder": Object {
+              "enabled": false,
+            },
+            "tooltip": Object {
+              "compareMode": false,
+              "compareType": "absolute",
+              "enabled": true,
+              "fieldsToShow": Object {
+                "40eogm50r": Array [
+                  Object {
+                    "format": null,
+                    "name": "Product Type",
+                  },
+                  Object {
+                    "format": null,
+                    "name": "Request Time",
+                  },
+                  Object {
+                    "format": null,
+                    "name": "Begin Trip Time",
+                  },
+                  Object {
+                    "format": null,
+                    "name": "Begin Trip Address",
+                  },
+                  Object {
+                    "format": null,
+                    "name": "Dropoff Address",
+                  },
+                ],
+              },
+            },
+          },
+          "layerBlending": "normal",
+          "layers": Array [
+            Object {
+              "config": Object {
+                "color": Array [
+                  82,
+                  163,
+                  83,
+                ],
+                "columns": Object {
+                  "lat": "Begin Trip Lat",
+                  "lng": "Begin Trip Lng",
+                },
+                "dataId": "40eogm50r",
+                "hidden": false,
+                "highlightColor": Array [
+                  252,
+                  242,
+                  26,
+                  255,
+                ],
+                "isVisible": true,
+                "label": "begin trip",
+                "textLabel": Array [
+                  Object {
+                    "alignment": "center",
+                    "anchor": "start",
+                    "color": Array [
+                      255,
+                      255,
+                      255,
+                    ],
+                    "field": null,
+                    "offset": Array [
+                      0,
+                      0,
+                    ],
+                    "size": 18,
+                  },
+                ],
+                "visConfig": Object {
+                  "colorRange": Object {
+                    "category": "ColorBrewer",
+                    "colors": Array [
+                      "#f7fcb9",
+                      "#addd8e",
+                      "#31a354",
+                    ],
+                    "name": "ColorBrewer YlGn-3",
+                    "type": "sequential",
+                  },
+                  "opacity": 0.49,
+                  "radius": 20,
+                },
+              },
+              "id": "4ey7dbg",
+              "type": "heatmap",
+              "visualChannels": Object {
+                "weightField": null,
+                "weightScale": "linear",
+              },
+            },
+            Object {
+              "config": Object {
+                "color": Array [
+                  130,
+                  154,
+                  227,
+                ],
+                "columns": Object {
+                  "lat": "Dropoff Lat",
+                  "lng": "Dropoff Lng",
+                },
+                "dataId": "40eogm50r",
+                "hidden": false,
+                "highlightColor": Array [
+                  252,
+                  242,
+                  26,
+                  255,
+                ],
+                "isVisible": true,
+                "label": "dropoff",
+                "lineColor": Array [
+                  130,
+                  154,
+                  227,
+                ],
+                "lineWidth": 4,
+                "textLabel": Array [
+                  Object {
+                    "alignment": "center",
+                    "anchor": "start",
+                    "color": Array [
+                      255,
+                      255,
+                      255,
+                    ],
+                    "field": null,
+                    "offset": Array [
+                      0,
+                      0,
+                    ],
+                    "size": 18,
+                  },
+                ],
+                "visConfig": Object {
+                  "colorRange": Object {
+                    "category": "ColorBrewer",
+                    "colors": Array [
+                      "#f0f0f0",
+                      "#bdbdbd",
+                      "#636363",
+                    ],
+                    "name": "ColorBrewer Greys-3",
+                    "type": "singlehue",
+                  },
+                  "opacity": 0.8,
+                  "radius": 20,
+                },
+              },
+              "id": "81tuguf",
+              "type": "heatmap",
+              "visualChannels": Object {
+                "weightField": null,
+                "weightScale": "linear",
+              },
+            },
+            Object {
+              "config": Object {
+                "color": Array [
+                  0,
+                  90,
+                  0,
+                ],
+                "columns": Object {
+                  "lat0": "Begin Trip Lat",
+                  "lat1": "Dropoff Lat",
+                  "lng0": "Begin Trip Lng",
+                  "lng1": "Dropoff Lng",
+                },
+                "dataId": "40eogm50r",
+                "hidden": false,
+                "highlightColor": Array [
+                  252,
+                  242,
+                  26,
+                  255,
+                ],
+                "isVisible": true,
+                "label": "begin trip -> dropoff arc",
+                "textLabel": Array [
+                  Object {
+                    "alignment": "center",
+                    "anchor": "start",
+                    "color": Array [
+                      255,
+                      255,
+                      255,
+                    ],
+                    "field": null,
+                    "offset": Array [
+                      0,
+                      0,
+                    ],
+                    "size": 18,
+                  },
+                ],
+                "visConfig": Object {
+                  "colorRange": Object {
+                    "category": "Uber",
+                    "colors": Array [
+                      "#5A1846",
+                      "#900C3F",
+                      "#C70039",
+                      "#E3611C",
+                      "#F1920E",
+                    ],
+                    "name": "Global Warming",
+                    "type": "sequential",
+                  },
+                  "opacity": 1,
+                  "sizeRange": Array [
+                    0,
+                    10,
+                  ],
+                  "targetColor": null,
+                  "thickness": 2.5,
+                },
+              },
+              "id": "dorf8mj",
+              "type": "arc",
+              "visualChannels": Object {
+                "colorField": null,
+                "colorScale": "quantile",
+                "sizeField": null,
+                "sizeScale": "linear",
+              },
+            },
+            Object {
+              "config": Object {
+                "color": Array [
+                  235,
+                  233,
+                  228,
+                ],
+                "columns": Object {
+                  "alt0": null,
+                  "alt1": null,
+                  "lat0": "Begin Trip Lat",
+                  "lat1": "Dropoff Lat",
+                  "lng0": "Begin Trip Lng",
+                  "lng1": "Dropoff Lng",
+                },
+                "dataId": "40eogm50r",
+                "hidden": false,
+                "highlightColor": Array [
+                  252,
+                  242,
+                  26,
+                  255,
+                ],
+                "isVisible": false,
+                "label": "begin trip -> dropoff line",
+                "textLabel": Array [
+                  Object {
+                    "alignment": "center",
+                    "anchor": "start",
+                    "color": Array [
+                      255,
+                      255,
+                      255,
+                    ],
+                    "field": null,
+                    "offset": Array [
+                      0,
+                      0,
+                    ],
+                    "size": 18,
+                  },
+                ],
+                "visConfig": Object {
+                  "colorRange": Object {
+                    "category": "Uber",
+                    "colors": Array [
+                      "#5A1846",
+                      "#900C3F",
+                      "#C70039",
+                      "#E3611C",
+                      "#F1920E",
+                    ],
+                    "name": "Global Warming",
+                    "type": "sequential",
+                  },
+                  "elevationScale": 1,
+                  "opacity": 0.8,
+                  "sizeRange": Array [
+                    0,
+                    10,
+                  ],
+                  "targetColor": null,
+                  "thickness": 2,
+                },
+              },
+              "id": "k8xzs4f",
+              "type": "line",
+              "visualChannels": Object {
+                "colorField": null,
+                "colorScale": "quantile",
+                "sizeField": null,
+                "sizeScale": "linear",
+              },
+            },
+          ],
+          "splitMaps": Array [],
+        },
+      },
+      "version": "v1",
+    },
+    "rawCsv": "City,Product Type,Trip or Order Status,Request Time,Begin Trip Time,Begin Trip L…",
+  },
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverAccounting 1`] = `
+Object {
+  "count": 30,
+  "firstItems": Array [
+    Object {
+      "begin_ts": 1629547421,
+      "distance": 0,
+      "end_ts": 1596374556,
+      "price": 0,
+      "status": "Waiting (P1)",
+    },
+    Object {
+      "begin_ts": 1629024395,
+      "distance": 0,
+      "end_ts": 1600281815,
+      "price": 0,
+      "status": "En route (P2)",
+    },
+    Object {
+      "begin_ts": 1662998313,
+      "distance": 16,
+      "end_ts": 1606614087,
+      "price": 35,
+      "status": "On trip (P3)",
+    },
+  ],
+  "headers": Array [
+    "begin_ts",
+    "end_ts",
+    "status",
+    "distance",
+    "price",
+  ],
+  "sha256": "45b89595046f246fcc5c2c14ff87c36dc2f9d512ec18d1aa9c02cf257c94e8b1",
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverAppAnalytics 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverHeatMap 1`] = `
+Object {
+  "count": 244,
+  "firstItems": Array [
+    Object {
+      "beginLat": "48.81098937988281",
+      "beginLng": "2.4693443775177",
+      "beginTimestampUtc": "2021-02-01T10:12:04.000Z",
+      "durationMs": "375000",
+      "endLat": "48.820919036865234",
+      "endLng": "2.48992919921875",
+      "endTimestampUtc": "2021-02-01T10:18:20.000Z",
+    },
+    Object {
+      "beginLat": "48.86347579956055",
+      "beginLng": "2.2840704917907715",
+      "beginTimestampUtc": "2021-02-01T20:43:30.000Z",
+      "durationMs": "741000",
+      "endLat": "48.82539749145508",
+      "endLng": "2.2936103343963623",
+      "endTimestampUtc": "2021-02-01T20:55:51.000Z",
+    },
+    Object {
+      "beginLat": "48.86106491088867",
+      "beginLng": "2.304800033569336",
+      "beginTimestampUtc": "2021-02-01T21:32:56.000Z",
+      "durationMs": "770000",
+      "endLat": "48.82820129394531",
+      "endLng": "2.2812955379486084",
+      "endTimestampUtc": "2021-02-01T21:45:47.000Z",
+    },
+  ],
+  "headers": Array [
+    "beginTimestampUtc",
+    "endTimestampUtc",
+    "durationMs",
+    "beginLat",
+    "beginLng",
+    "endLat",
+    "endLng",
+  ],
+  "sha256": "3a81b8561a71a4309f01b0afa8a8b5784b8211c7b817fc447b3c1f5ce5771bb2",
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverOnOff 1`] = `
+Object {
+  "count": 1138,
+  "firstItems": Array [
+    Object {
+      "beginLat": "48.78113555908203",
+      "beginLng": "2.4580843448638916",
+      "beginTimestampUtc": "2021-02-01T09:40:46.000Z",
+      "durationMs": "1542000",
+      "earnerState": "open",
+      "endLat": "48.806053161621094",
+      "endLng": "2.471439838409424",
+      "endTimestampUtc": "2021-02-01T10:06:29.000Z",
+    },
+    Object {
+      "beginLat": "48.806053161621094",
+      "beginLng": "2.471439838409424",
+      "beginTimestampUtc": "2021-02-01T10:06:29.000Z",
+      "durationMs": "335000",
+      "earnerState": "enroute",
+      "endLat": "48.81098937988281",
+      "endLng": "2.4693443775177",
+      "endTimestampUtc": "2021-02-01T10:12:04.000Z",
+    },
+    Object {
+      "beginLat": "48.81098937988281",
+      "beginLng": "2.4693443775177",
+      "beginTimestampUtc": "2021-02-01T10:12:04.000Z",
+      "durationMs": "375000",
+      "earnerState": "ontrip",
+      "endLat": "48.820919036865234",
+      "endLng": "2.48992919921875",
+      "endTimestampUtc": "2021-02-01T10:18:20.000Z",
+    },
+  ],
+  "headers": Array [
+    "earnerState",
+    "beginTimestampUtc",
+    "endTimestampUtc",
+    "durationMs",
+    "beginLat",
+    "beginLng",
+    "endLat",
+    "endLng",
+  ],
+  "sha256": "d3a41377088437fe8c1f3ad56177d666ec04eb397c40da1b3b0067dddad087a6",
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverPayments 1`] = `
+Object {
+  "count": 1047,
+  "firstItems": Array [
+    Object {
+      "amountLocal": "-4.25",
+      "category": "commission",
+      "cityId": "3",
+      "classification": "intermediary.commission",
+      "currencyCode": "EUR",
+      "recognizeTimestampLocal": "2021-02-28 23:17:18",
+    },
+    Object {
+      "amountLocal": "17.0",
+      "category": "driver_payment_fares",
+      "cityId": "3",
+      "classification": "transport.fare.driver_upfront_fare",
+      "currencyCode": "EUR",
+      "recognizeTimestampLocal": "2021-02-28 23:17:18",
+    },
+    Object {
+      "amountLocal": "-1.55",
+      "category": "tax",
+      "cityId": "3",
+      "classification": "transport.tax.vat",
+      "currencyCode": "EUR",
+      "recognizeTimestampLocal": "2021-02-28 23:17:18",
+    },
+  ],
+  "headers": Array [
+    "cityId",
+    "amountLocal",
+    "currencyCode",
+    "classification",
+    "category",
+    "recognizeTimestampLocal",
+  ],
+  "sha256": "e351a8a4cc7d5d03719da0a8e049af8ad4b4c4a28fabd8bca1d6dc1765cf43f0",
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverRestrictions 1`] = `
+Object {
+  "count": 109,
+  "firstItems": Array [
+    Object {
+      "msgCityid": "3",
+      "msgLatitude": "48.845528",
+      "msgLongitude": "2.3704932",
+      "msgPenaltyboxdurationms": "0",
+      "msgRule": "consecutiveReject",
+      "time": "2021-02-28 23:55:40",
+    },
+    Object {
+      "msgCityid": "3",
+      "msgLatitude": "48.845993",
+      "msgLongitude": "2.3733666",
+      "msgPenaltyboxdurationms": "0",
+      "msgRule": "consecutiveReject",
+      "time": "2021-02-28 23:54:08",
+    },
+    Object {
+      "msgCityid": "3",
+      "msgLatitude": "48.845722",
+      "msgLongitude": "2.371903",
+      "msgPenaltyboxdurationms": "0",
+      "msgRule": "consecutiveReject",
+      "time": "2021-02-28 23:53:22",
+    },
+  ],
+  "headers": Array [
+    "msgCityid",
+    "msgPenaltyboxdurationms",
+    "msgRule",
+    "time",
+    "msgLatitude",
+    "msgLongitude",
+  ],
+  "sha256": "6f2468bb395875fcd3307bc1bcf495d915650da71f9bcc215347455bc07c6aa7",
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverTrips 1`] = `
+Object {
+  "count": 262,
+  "firstItems": Array [
+    Object {
+      "begin_date": "2021-02-28T23:23:56.000Z",
+      "distance": "7.155",
+      "duration": "1125",
+      "end_date": "2021-02-28T23:42:41.000Z",
+      "originalFareLocal": "28.92",
+      "status": "completed",
+    },
+    Object {
+      "begin_date": "2021-02-28T22:33:29.000Z",
+      "distance": "6.989",
+      "duration": "1427",
+      "end_date": "2021-02-28T22:57:16.000Z",
+      "originalFareLocal": "17.0",
+      "status": "completed",
+    },
+    Object {
+      "begin_date": "2021-02-28T21:42:37.000Z",
+      "distance": "12.243",
+      "duration": "1500",
+      "end_date": "2021-02-28T22:07:37.000Z",
+      "originalFareLocal": "24.75",
+      "status": "completed",
+    },
+  ],
+  "headers": Array [
+    "status",
+    "begin_date",
+    "end_date",
+    "distance",
+    "duration",
+    "originalFareLocal",
+  ],
+  "sha256": "94b528e8e6c78129bc17b0d073758ce1ef7b0ad6ebd2fde25b8d258f9bf02c58",
+}
+`;
+
+exports[`uber-driver with uber-driver-fr-paris.zip view block outputs match the snapshots: driverTrips_0 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`uber-eats with uber-eats-sample.zip view block outputs match the snapshots: combined_data_pipeline 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "online": Object {
+        "headers": Array [
+          "begin",
+          "end",
+          "hours",
+        ],
+        "items": Array [
+          Object {
+            "begin": "2023-11-07T14:06:40.000Z",
+            "end": "2023-11-09T13:26:19.000Z",
+            "hours": 47.32756583333333,
+            "state": "offline",
+          },
+          Object {
+            "begin": "2023-11-09T13:26:19.000Z",
+            "end": "2023-11-09T13:26:33.000Z",
+            "hours": 0.0037083333333333334,
+            "state": "open",
+          },
+          Object {
+            "begin": "2023-11-09T13:26:33.000Z",
+            "end": "2023-11-09T13:33:26.000Z",
+            "hours": 0.11476972222222222,
+            "state": "offline",
+          },
+          Object {
+            "begin": "2023-11-09T13:33:26.000Z",
+            "end": "2023-11-09T13:33:33.000Z",
+            "hours": 0.001970277777777778,
+            "state": "open",
+          },
+          Object {
+            "begin": "2023-11-09T13:33:33.000Z",
+            "end": "2023-11-10T11:31:44.000Z",
+            "hours": 21.96978055555556,
+            "state": "offline",
+          },
+        ],
+      },
+      "payments": Object {
+        "headers": Array [
+          "cityName",
+          "amountLocal",
+          "currencyCode",
+          "classification",
+          "category",
+        ],
+        "items": Array [
+          Object {
+            "amountLocal": "4.8",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.pickup",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:36:36",
+          },
+          Object {
+            "amountLocal": "3.69",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.dropoff",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:36:36",
+          },
+          Object {
+            "amountLocal": "2.16",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.distance",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:36:36",
+          },
+          Object {
+            "amountLocal": "4.81",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.distance",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:42:21",
+          },
+          Object {
+            "amountLocal": "4.8",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.pickup",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:42:21",
+          },
+        ],
+      },
+      "trips": Object {
+        "headers": Array [
+          "cityName",
+          "courierAcceptTimestampLocal",
+          "courierAcceptTimestampUtc",
+          "courierAcceptToPickupDistanceMiles",
+          "courierAcceptToPickupDurationSeconds",
+        ],
+        "items": Array [
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:36:35",
+            "courierAcceptTimestampUtc": "2023-11-10 10:36:35",
+            "courierAcceptToPickupDistanceMiles": "0.41290929568925416",
+            "courierAcceptToPickupDurationSeconds": "442",
+            "courierAcceptTripLat": "46.51762",
+            "courierAcceptTripLng": "6.62848",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 11:48:37",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:43:57",
+            "courierBegintripLat": "46.51994",
+            "courierBegintripLng": "6.63628",
+            "courierBegintripTimestampLocal": "2023-11-10 11:45:20",
+            "courierBegintripToDropoffMiles": "0.39",
+            "courierBegintripToDropoffSeconds": "295",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 11:50:15",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0363",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:36:32",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:50:36",
+            "courierAcceptTimestampUtc": "2023-11-10 10:50:36",
+            "courierAcceptToPickupDistanceMiles": "0.17906261214281582",
+            "courierAcceptToPickupDurationSeconds": "149",
+            "courierAcceptTripLat": "46.52107",
+            "courierAcceptTripLng": "6.63369",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 12:11:53",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:53:05",
+            "courierBegintripLat": "46.52195",
+            "courierBegintripLng": "6.63005",
+            "courierBegintripTimestampLocal": "2023-11-10 12:02:46",
+            "courierBegintripToDropoffMiles": "0.87",
+            "courierBegintripToDropoffSeconds": "668",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 12:13:54",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0098",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:50:17",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:56:59",
+            "courierAcceptTimestampUtc": "2023-11-10 10:56:59",
+            "courierAcceptToPickupDistanceMiles": "0.005611512765509177",
+            "courierAcceptToPickupDurationSeconds": "1",
+            "courierAcceptTripLat": "46.522",
+            "courierAcceptTripLng": "6.63005",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 12:27:33",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:57:00",
+            "courierBegintripLat": "46.52195",
+            "courierBegintripLng": "6.63005",
+            "courierBegintripTimestampLocal": "2023-11-10 12:02:46",
+            "courierBegintripToDropoffMiles": "3.32",
+            "courierBegintripToDropoffSeconds": "1669",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 12:30:35",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0212",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:56:47",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 12:30:59",
+            "courierAcceptTimestampUtc": "2023-11-10 11:30:59",
+            "courierAcceptToPickupDistanceMiles": "2.9097048213142958",
+            "courierAcceptToPickupDurationSeconds": "1734",
+            "courierAcceptTripLat": "46.52107",
+            "courierAcceptTripLng": "6.56553",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 13:08:32",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 12:59:53",
+            "courierBegintripLat": "46.52238",
+            "courierBegintripLng": "6.62669",
+            "courierBegintripTimestampLocal": "2023-11-10 13:03:36",
+            "courierBegintripToDropoffMiles": "0.65",
+            "courierBegintripToDropoffSeconds": "366",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 13:09:42",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0197",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 12:30:47",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 13:11:27",
+            "courierAcceptTimestampUtc": "2023-11-10 12:11:27",
+            "courierAcceptToPickupDistanceMiles": "0.21509991237897913",
+            "courierAcceptToPickupDurationSeconds": "278",
+            "courierAcceptTripLat": "46.52038",
+            "courierAcceptTripLng": "6.63623",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 13:32:57",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 13:16:05",
+            "courierBegintripLat": "46.51955",
+            "courierBegintripLng": "6.63194",
+            "courierBegintripTimestampLocal": "2023-11-10 13:21:53",
+            "courierBegintripToDropoffMiles": "2.01",
+            "courierBegintripToDropoffSeconds": "769",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 13:34:42",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0138",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 13:09:02",
+          },
+        ],
+      },
+    },
+  ],
+  "headers": Array [
+    "online",
+    "payments",
+    "trips",
+  ],
+  "sha256": "206ab080d5a6228f5cf7071013d3afa917543db4294bf6875b23fb2b97cb8d19",
+}
+`;
+
+exports[`uber-eats with uber-eats-sample.zip view block outputs match the snapshots: csv_courier_trips 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "trips": Object {
+        "headers": Array [
+          "cityName",
+          "courierAcceptTimestampLocal",
+          "courierAcceptTimestampUtc",
+          "courierAcceptToPickupDistanceMiles",
+          "courierAcceptToPickupDurationSeconds",
+        ],
+        "items": Array [
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:36:35",
+            "courierAcceptTimestampUtc": "2023-11-10 10:36:35",
+            "courierAcceptToPickupDistanceMiles": "0.41290929568925416",
+            "courierAcceptToPickupDurationSeconds": "442",
+            "courierAcceptTripLat": "46.51762",
+            "courierAcceptTripLng": "6.62848",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 11:48:37",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:43:57",
+            "courierBegintripLat": "46.51994",
+            "courierBegintripLng": "6.63628",
+            "courierBegintripTimestampLocal": "2023-11-10 11:45:20",
+            "courierBegintripToDropoffMiles": "0.39",
+            "courierBegintripToDropoffSeconds": "295",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 11:50:15",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0363",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:36:32",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:50:36",
+            "courierAcceptTimestampUtc": "2023-11-10 10:50:36",
+            "courierAcceptToPickupDistanceMiles": "0.17906261214281582",
+            "courierAcceptToPickupDurationSeconds": "149",
+            "courierAcceptTripLat": "46.52107",
+            "courierAcceptTripLng": "6.63369",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 12:11:53",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:53:05",
+            "courierBegintripLat": "46.52195",
+            "courierBegintripLng": "6.63005",
+            "courierBegintripTimestampLocal": "2023-11-10 12:02:46",
+            "courierBegintripToDropoffMiles": "0.87",
+            "courierBegintripToDropoffSeconds": "668",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 12:13:54",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0098",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:50:17",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:56:59",
+            "courierAcceptTimestampUtc": "2023-11-10 10:56:59",
+            "courierAcceptToPickupDistanceMiles": "0.005611512765509177",
+            "courierAcceptToPickupDurationSeconds": "1",
+            "courierAcceptTripLat": "46.522",
+            "courierAcceptTripLng": "6.63005",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 12:27:33",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:57:00",
+            "courierBegintripLat": "46.52195",
+            "courierBegintripLng": "6.63005",
+            "courierBegintripTimestampLocal": "2023-11-10 12:02:46",
+            "courierBegintripToDropoffMiles": "3.32",
+            "courierBegintripToDropoffSeconds": "1669",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 12:30:35",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0212",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:56:47",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 12:30:59",
+            "courierAcceptTimestampUtc": "2023-11-10 11:30:59",
+            "courierAcceptToPickupDistanceMiles": "2.9097048213142958",
+            "courierAcceptToPickupDurationSeconds": "1734",
+            "courierAcceptTripLat": "46.52107",
+            "courierAcceptTripLng": "6.56553",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 13:08:32",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 12:59:53",
+            "courierBegintripLat": "46.52238",
+            "courierBegintripLng": "6.62669",
+            "courierBegintripTimestampLocal": "2023-11-10 13:03:36",
+            "courierBegintripToDropoffMiles": "0.65",
+            "courierBegintripToDropoffSeconds": "366",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 13:09:42",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0197",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 12:30:47",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 13:11:27",
+            "courierAcceptTimestampUtc": "2023-11-10 12:11:27",
+            "courierAcceptToPickupDistanceMiles": "0.21509991237897913",
+            "courierAcceptToPickupDurationSeconds": "278",
+            "courierAcceptTripLat": "46.52038",
+            "courierAcceptTripLng": "6.63623",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 13:32:57",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 13:16:05",
+            "courierBegintripLat": "46.51955",
+            "courierBegintripLng": "6.63194",
+            "courierBegintripTimestampLocal": "2023-11-10 13:21:53",
+            "courierBegintripToDropoffMiles": "2.01",
+            "courierBegintripToDropoffSeconds": "769",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 13:34:42",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0138",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 13:09:02",
+          },
+        ],
+      },
+    },
+  ],
+  "headers": Array [
+    "trips",
+  ],
+  "sha256": "18ccd4a3f1f548f597b088f216cd06d380b25008ca803121368a246a99db923b",
+}
+`;
+
+exports[`uber-eats with uber-eats-sample.zip view block outputs match the snapshots: earnings 1`] = `
+Object {
+  "count": 1,
+  "firstItems": Array [
+    Object {
+      "online": Object {
+        "headers": Array [
+          "begin",
+          "end",
+          "hours",
+        ],
+        "items": Array [
+          Object {
+            "begin": "2023-11-07T14:06:40.000Z",
+            "end": "2023-11-09T13:26:19.000Z",
+            "hours": 47.32756583333333,
+            "state": "offline",
+          },
+          Object {
+            "begin": "2023-11-09T13:26:19.000Z",
+            "end": "2023-11-09T13:26:33.000Z",
+            "hours": 0.0037083333333333334,
+            "state": "open",
+          },
+          Object {
+            "begin": "2023-11-09T13:26:33.000Z",
+            "end": "2023-11-09T13:33:26.000Z",
+            "hours": 0.11476972222222222,
+            "state": "offline",
+          },
+          Object {
+            "begin": "2023-11-09T13:33:26.000Z",
+            "end": "2023-11-09T13:33:33.000Z",
+            "hours": 0.001970277777777778,
+            "state": "open",
+          },
+          Object {
+            "begin": "2023-11-09T13:33:33.000Z",
+            "end": "2023-11-10T11:31:44.000Z",
+            "hours": 21.96978055555556,
+            "state": "offline",
+          },
+        ],
+      },
+      "payments": Object {
+        "headers": Array [
+          "cityName",
+          "amountLocal",
+          "currencyCode",
+          "classification",
+          "category",
+        ],
+        "items": Array [
+          Object {
+            "amountLocal": "4.8",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.pickup",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:36:36",
+          },
+          Object {
+            "amountLocal": "3.69",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.dropoff",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:36:36",
+          },
+          Object {
+            "amountLocal": "2.16",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.distance",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:36:36",
+          },
+          Object {
+            "amountLocal": "4.81",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.distance",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:42:21",
+          },
+          Object {
+            "amountLocal": "4.8",
+            "category": "driver_payment_fares",
+            "cityName": "Lausanne",
+            "classification": "delivery.fare.pickup",
+            "currencyCode": "CHF",
+            "recognizeTimestampLocal": "2023-11-10 11:42:21",
+          },
+        ],
+      },
+      "trips": Object {
+        "headers": Array [
+          "cityName",
+          "courierAcceptTimestampLocal",
+          "courierAcceptTimestampUtc",
+          "courierAcceptToPickupDistanceMiles",
+          "courierAcceptToPickupDurationSeconds",
+        ],
+        "items": Array [
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:36:35",
+            "courierAcceptTimestampUtc": "2023-11-10 10:36:35",
+            "courierAcceptToPickupDistanceMiles": "0.41290929568925416",
+            "courierAcceptToPickupDurationSeconds": "442",
+            "courierAcceptTripLat": "46.51762",
+            "courierAcceptTripLng": "6.62848",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 11:48:37",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:43:57",
+            "courierBegintripLat": "46.51994",
+            "courierBegintripLng": "6.63628",
+            "courierBegintripTimestampLocal": "2023-11-10 11:45:20",
+            "courierBegintripToDropoffMiles": "0.39",
+            "courierBegintripToDropoffSeconds": "295",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 11:50:15",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0363",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:36:32",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:50:36",
+            "courierAcceptTimestampUtc": "2023-11-10 10:50:36",
+            "courierAcceptToPickupDistanceMiles": "0.17906261214281582",
+            "courierAcceptToPickupDurationSeconds": "149",
+            "courierAcceptTripLat": "46.52107",
+            "courierAcceptTripLng": "6.63369",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 12:11:53",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:53:05",
+            "courierBegintripLat": "46.52195",
+            "courierBegintripLng": "6.63005",
+            "courierBegintripTimestampLocal": "2023-11-10 12:02:46",
+            "courierBegintripToDropoffMiles": "0.87",
+            "courierBegintripToDropoffSeconds": "668",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 12:13:54",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0098",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:50:17",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 11:56:59",
+            "courierAcceptTimestampUtc": "2023-11-10 10:56:59",
+            "courierAcceptToPickupDistanceMiles": "0.005611512765509177",
+            "courierAcceptToPickupDurationSeconds": "1",
+            "courierAcceptTripLat": "46.522",
+            "courierAcceptTripLng": "6.63005",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 12:27:33",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 11:57:00",
+            "courierBegintripLat": "46.52195",
+            "courierBegintripLng": "6.63005",
+            "courierBegintripTimestampLocal": "2023-11-10 12:02:46",
+            "courierBegintripToDropoffMiles": "3.32",
+            "courierBegintripToDropoffSeconds": "1669",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 12:30:35",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0212",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 11:56:47",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 12:30:59",
+            "courierAcceptTimestampUtc": "2023-11-10 11:30:59",
+            "courierAcceptToPickupDistanceMiles": "2.9097048213142958",
+            "courierAcceptToPickupDurationSeconds": "1734",
+            "courierAcceptTripLat": "46.52107",
+            "courierAcceptTripLng": "6.56553",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 13:08:32",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 12:59:53",
+            "courierBegintripLat": "46.52238",
+            "courierBegintripLng": "6.62669",
+            "courierBegintripTimestampLocal": "2023-11-10 13:03:36",
+            "courierBegintripToDropoffMiles": "0.65",
+            "courierBegintripToDropoffSeconds": "366",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 13:09:42",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0197",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 12:30:47",
+          },
+          Object {
+            "cityName": "Lausanne",
+            "courierAcceptTimestampLocal": "2023-11-10 13:11:27",
+            "courierAcceptTimestampUtc": "2023-11-10 12:11:27",
+            "courierAcceptToPickupDistanceMiles": "0.21509991237897913",
+            "courierAcceptToPickupDurationSeconds": "278",
+            "courierAcceptTripLat": "46.52038",
+            "courierAcceptTripLng": "6.63623",
+            "courierAppVersion": "4.433.10001",
+            "courierArrivalDropoffTimestampLocal": "2023-11-10 13:32:57",
+            "courierArrivalPickupTimestampLocal": "2023-11-10 13:16:05",
+            "courierBegintripLat": "46.51955",
+            "courierBegintripLng": "6.63194",
+            "courierBegintripTimestampLocal": "2023-11-10 13:21:53",
+            "courierBegintripToDropoffMiles": "2.01",
+            "courierBegintripToDropoffSeconds": "769",
+            "courierCommissionRate": "0.0",
+            "courierDevice": "iphone",
+            "courierDropoffTimestampLocal": "2023-11-10 13:34:42",
+            "deliveryStatus": "completed",
+            "dropoffDeliveryDistanceKm": "0.0138",
+            "licensePlate": "",
+            "restaurantRequestTimestampLocal": "2023-11-10 13:09:02",
+          },
+        ],
+      },
+    },
+  ],
+  "headers": Array [
+    "online",
+    "payments",
+    "trips",
+  ],
+  "sha256": "206ab080d5a6228f5cf7071013d3afa917543db4294bf6875b23fb2b97cb8d19",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverAccounting 1`] = `
+Object {
+  "count": 30,
+  "firstItems": Array [
+    Object {
+      "begin_ts": 1629547421,
+      "distance": 0,
+      "end_ts": 1596374556,
+      "price": 0,
+      "status": "Waiting (P1)",
+    },
+    Object {
+      "begin_ts": 1629024395,
+      "distance": 0,
+      "end_ts": 1600281815,
+      "price": 0,
+      "status": "En route (P2)",
+    },
+    Object {
+      "begin_ts": 1662998313,
+      "distance": 16,
+      "end_ts": 1606614087,
+      "price": 35,
+      "status": "On trip (P3)",
+    },
+  ],
+  "headers": Array [
+    "begin_ts",
+    "end_ts",
+    "status",
+    "distance",
+    "price",
+  ],
+  "sha256": "45b89595046f246fcc5c2c14ff87c36dc2f9d512ec18d1aa9c02cf257c94e8b1",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverAppAnalytics 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverHeatMap 1`] = `
+Object {
+  "count": 244,
+  "firstItems": Array [
+    Object {
+      "beginLat": "48.81098937988281",
+      "beginLng": "2.4693443775177",
+      "beginTimestampUtc": "2021-02-01T10:12:04.000Z",
+      "durationMs": "375000",
+      "endLat": "48.820919036865234",
+      "endLng": "2.48992919921875",
+      "endTimestampUtc": "2021-02-01T10:18:20.000Z",
+    },
+    Object {
+      "beginLat": "48.86347579956055",
+      "beginLng": "2.2840704917907715",
+      "beginTimestampUtc": "2021-02-01T20:43:30.000Z",
+      "durationMs": "741000",
+      "endLat": "48.82539749145508",
+      "endLng": "2.2936103343963623",
+      "endTimestampUtc": "2021-02-01T20:55:51.000Z",
+    },
+    Object {
+      "beginLat": "48.86106491088867",
+      "beginLng": "2.304800033569336",
+      "beginTimestampUtc": "2021-02-01T21:32:56.000Z",
+      "durationMs": "770000",
+      "endLat": "48.82820129394531",
+      "endLng": "2.2812955379486084",
+      "endTimestampUtc": "2021-02-01T21:45:47.000Z",
+    },
+  ],
+  "headers": Array [
+    "beginTimestampUtc",
+    "endTimestampUtc",
+    "durationMs",
+    "beginLat",
+    "beginLng",
+    "endLat",
+    "endLng",
+  ],
+  "sha256": "3a81b8561a71a4309f01b0afa8a8b5784b8211c7b817fc447b3c1f5ce5771bb2",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverOnOff 1`] = `
+Object {
+  "count": 1138,
+  "firstItems": Array [
+    Object {
+      "beginLat": "48.78113555908203",
+      "beginLng": "2.4580843448638916",
+      "beginTimestampUtc": "2021-02-01T09:40:46.000Z",
+      "durationMs": "1542000",
+      "earnerState": "open",
+      "endLat": "48.806053161621094",
+      "endLng": "2.471439838409424",
+      "endTimestampUtc": "2021-02-01T10:06:29.000Z",
+    },
+    Object {
+      "beginLat": "48.806053161621094",
+      "beginLng": "2.471439838409424",
+      "beginTimestampUtc": "2021-02-01T10:06:29.000Z",
+      "durationMs": "335000",
+      "earnerState": "enroute",
+      "endLat": "48.81098937988281",
+      "endLng": "2.4693443775177",
+      "endTimestampUtc": "2021-02-01T10:12:04.000Z",
+    },
+    Object {
+      "beginLat": "48.81098937988281",
+      "beginLng": "2.4693443775177",
+      "beginTimestampUtc": "2021-02-01T10:12:04.000Z",
+      "durationMs": "375000",
+      "earnerState": "ontrip",
+      "endLat": "48.820919036865234",
+      "endLng": "2.48992919921875",
+      "endTimestampUtc": "2021-02-01T10:18:20.000Z",
+    },
+  ],
+  "headers": Array [
+    "earnerState",
+    "beginTimestampUtc",
+    "endTimestampUtc",
+    "durationMs",
+    "beginLat",
+    "beginLng",
+    "endLat",
+    "endLng",
+  ],
+  "sha256": "d3a41377088437fe8c1f3ad56177d666ec04eb397c40da1b3b0067dddad087a6",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverPayments 1`] = `
+Object {
+  "count": 1047,
+  "firstItems": Array [
+    Object {
+      "amountLocal": "-4.25",
+      "category": "commission",
+      "cityId": "3",
+      "classification": "intermediary.commission",
+      "currencyCode": "EUR",
+      "recognizeTimestampLocal": "2021-02-28 23:17:18",
+    },
+    Object {
+      "amountLocal": "17.0",
+      "category": "driver_payment_fares",
+      "cityId": "3",
+      "classification": "transport.fare.driver_upfront_fare",
+      "currencyCode": "EUR",
+      "recognizeTimestampLocal": "2021-02-28 23:17:18",
+    },
+    Object {
+      "amountLocal": "-1.55",
+      "category": "tax",
+      "cityId": "3",
+      "classification": "transport.tax.vat",
+      "currencyCode": "EUR",
+      "recognizeTimestampLocal": "2021-02-28 23:17:18",
+    },
+  ],
+  "headers": Array [
+    "cityId",
+    "amountLocal",
+    "currencyCode",
+    "classification",
+    "category",
+    "recognizeTimestampLocal",
+  ],
+  "sha256": "e351a8a4cc7d5d03719da0a8e049af8ad4b4c4a28fabd8bca1d6dc1765cf43f0",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverRestrictions 1`] = `
+Object {
+  "count": 109,
+  "firstItems": Array [
+    Object {
+      "msgCityid": "3",
+      "msgLatitude": "48.845528",
+      "msgLongitude": "2.3704932",
+      "msgPenaltyboxdurationms": "0",
+      "msgRule": "consecutiveReject",
+      "time": "2021-02-28 23:55:40",
+    },
+    Object {
+      "msgCityid": "3",
+      "msgLatitude": "48.845993",
+      "msgLongitude": "2.3733666",
+      "msgPenaltyboxdurationms": "0",
+      "msgRule": "consecutiveReject",
+      "time": "2021-02-28 23:54:08",
+    },
+    Object {
+      "msgCityid": "3",
+      "msgLatitude": "48.845722",
+      "msgLongitude": "2.371903",
+      "msgPenaltyboxdurationms": "0",
+      "msgRule": "consecutiveReject",
+      "time": "2021-02-28 23:53:22",
+    },
+  ],
+  "headers": Array [
+    "msgCityid",
+    "msgPenaltyboxdurationms",
+    "msgRule",
+    "time",
+    "msgLatitude",
+    "msgLongitude",
+  ],
+  "sha256": "6f2468bb395875fcd3307bc1bcf495d915650da71f9bcc215347455bc07c6aa7",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverTrips 1`] = `
+Object {
+  "count": 262,
+  "firstItems": Array [
+    Object {
+      "begin_date": "2021-02-28T23:23:56.000Z",
+      "distance": "7.155",
+      "duration": "1125",
+      "end_date": "2021-02-28T23:42:41.000Z",
+      "originalFareLocal": "28.92",
+      "status": "completed",
+    },
+    Object {
+      "begin_date": "2021-02-28T22:33:29.000Z",
+      "distance": "6.989",
+      "duration": "1427",
+      "end_date": "2021-02-28T22:57:16.000Z",
+      "originalFareLocal": "17.0",
+      "status": "completed",
+    },
+    Object {
+      "begin_date": "2021-02-28T21:42:37.000Z",
+      "distance": "12.243",
+      "duration": "1500",
+      "end_date": "2021-02-28T22:07:37.000Z",
+      "originalFareLocal": "24.75",
+      "status": "completed",
+    },
+  ],
+  "headers": Array [
+    "status",
+    "begin_date",
+    "end_date",
+    "distance",
+    "duration",
+    "originalFareLocal",
+  ],
+  "sha256": "94b528e8e6c78129bc17b0d073758ce1ef7b0ad6ebd2fde25b8d258f9bf02c58",
+}
+`;
+
+exports[`uber-rider with uber-driver-fr-paris.zip view block outputs match the snapshots: driverTrips_0 1`] = `
+Object {
+  "count": 0,
+  "firstItems": Array [],
+  "headers": Array [],
+  "sha256": "510bf9eaa5c02b4b5bb7027a1bb6c36788a4204c24b2abb94bde9a679c2bd2c6",
+}
+`;
+
+exports[`wolt with wolt.zip view block outputs match the snapshots: courierTasks 1`] = `
+Object {
+  "count": 814,
+  "firstItems": Array [
+    Object {
+      "begin_date": "2020-04-24 16:19:34.025",
+    },
+    Object {
+      "begin_date": "2020-05-07 15:07:02.476",
+    },
+    Object {
+      "begin_date": "2020-04-24 16:43:28.318",
+    },
+  ],
+  "headers": Array [
+    "begin_date",
+  ],
+  "sha256": "c1c69dc9e69f9785897c3858f21dd096998f077124b18ec2b90a5d67cd0879bb",
+}
+`;

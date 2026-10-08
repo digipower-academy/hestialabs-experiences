@@ -28,7 +28,8 @@
     "build-watch": "npm run build -- --watch",
     "build:demo": "vue-cli-service build --dest demo ./dev/main.js",
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\"",
-    "lint:fix": "npx eslint . --ext .js,.vue --fix"
+    "lint:fix": "npx eslint . --ext .js,.vue --fix",
+    "test:golden": "jest src/__tests__/golden"
   },
   "main": "dist/DataExperience.umd.js",
   "dependencies": {
@@ -113,6 +114,7 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
+    "globalSetup": "./jest.global-setup.cjs",
     "setupFiles": [
       "jest-canvas-mock"
     ],

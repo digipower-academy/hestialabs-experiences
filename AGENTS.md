@@ -29,6 +29,7 @@ npm test                   # the same checks as CI (.github/workflows/ci.yml)
 - one experience's config: `cd packages && npm run build && npm run test:ts-node -- <name>`
 - one Jest file: `cd data-experience && npx jest src/__tests__/<name>`
 - lint one file: `cd data-experience && npx eslint <file>`
+- golden tests (every tab's output on sample data, compared with snapshots): `cd data-experience && npm run test:golden`; after an intended change, `npm run test:golden -- -u` and explain the snapshot diff in the PR. See `data-experience/src/__tests__/golden/README.md`.
 
 Playwright (`data-experience/e2e`) is not in CI yet: it needs `npm run dev:app` in `data-experience` on port 8080 and the bubble server on port 8000. `e2e/fixtures.js` serves CDN assets locally; the Facebook and Google specs still need internet access for the Kepler map (unpkg).
 
