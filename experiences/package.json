@@ -98,7 +98,7 @@
     "liquidjs": "^10.7.1",
     "lodash-es": "^4.17.21",
     "nuxt": "^2.15.8",
-    "nuxt-directus": "^3.2.2",
+    "nuxt-directus": "^5.7.0",
     "papaparse": "^5.4.1",
     "sass-loader": "^10",
     "share-api-polyfill": "^1.1.0",
